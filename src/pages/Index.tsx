@@ -2,13 +2,20 @@ import { useState } from "react";
 import { chatThemes } from "@/data/chatThemes";
 import ChatPreview from "@/components/ChatPreview";
 import ThemeGrid from "@/components/ThemeGrid";
+import ProfileSection from "@/components/ProfileSection";
 
 const Index = () => {
   const [selected, setSelected] = useState(chatThemes[0]);
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container max-w-6xl py-8 px-4 space-y-8">
+      <div className="container max-w-6xl py-8 px-4 space-y-10">
+        {/* Profile Section */}
+        <ProfileSection />
+
+        {/* Separator */}
+        <div className="border-t border-border" />
+
         {/* Header */}
         <div className="text-center space-y-2">
           <h1 className="text-3xl font-bold tracking-tight text-foreground">
