@@ -21,15 +21,16 @@ const Index = () => {
 
         {/* Preview */}
         <div className="flex justify-center">
-          <ChatPreview background={selected.css} />
+          <ChatPreview backgroundImage={selected.image} />
         </div>
 
         {/* Selected info */}
         <div className="text-center">
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-medium">
-            <span
-              className="w-3 h-3 rounded-full border border-border"
-              style={{ background: selected.css }}
+            <img
+              src={selected.image}
+              alt=""
+              className="w-4 h-4 rounded-full object-cover border border-border"
             />
             {selected.name}
           </span>

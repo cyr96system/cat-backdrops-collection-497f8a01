@@ -48,20 +48,26 @@ const ThemeGrid = ({ selected, onSelect }: ThemeGridProps) => {
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.2 }}
               onClick={() => onSelect(theme)}
-              className={`relative aspect-square rounded-xl overflow-hidden cursor-pointer border-2 transition-colors duration-200 group ${
+              className={`relative aspect-[3/4] rounded-xl overflow-hidden cursor-pointer border-2 transition-colors duration-200 group ${
                 selected.id === theme.id
                   ? "border-primary shadow-lg shadow-primary/25"
                   : "border-transparent hover:border-border"
               }`}
-              style={{ background: theme.css }}
               title={theme.name}
             >
+              <img
+                src={theme.image}
+                alt={theme.name}
+                loading="lazy"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+
               {/* Selected indicator */}
               {selected.id === theme.id && (
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  className="absolute inset-0 flex items-center justify-center bg-black/20 backdrop-blur-[1px]"
+                  className="absolute inset-0 flex items-center justify-center bg-black/30"
                 >
                   <div className="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
                     <Check className="w-3.5 h-3.5 text-primary-foreground" />
@@ -69,7 +75,7 @@ const ThemeGrid = ({ selected, onSelect }: ThemeGridProps) => {
                 </motion.div>
               )}
 
-              {/* Name tooltip on hover */}
+              {/* Name on hover */}
               <div className="absolute bottom-0 inset-x-0 bg-black/60 backdrop-blur-sm px-1 py-0.5 text-[10px] text-white text-center opacity-0 group-hover:opacity-100 transition-opacity truncate">
                 {theme.name}
               </div>

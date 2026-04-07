@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 interface ChatPreviewProps {
-  background: string;
+  backgroundImage: string;
 }
 
 const messages = [
@@ -11,7 +11,7 @@ const messages = [
   { sent: true, text: "Oui, j'adore ! 🔥" },
 ];
 
-const ChatPreview = ({ background }: ChatPreviewProps) => {
+const ChatPreview = ({ backgroundImage }: ChatPreviewProps) => {
   return (
     <motion.div
       layout
@@ -31,28 +31,36 @@ const ChatPreview = ({ background }: ChatPreviewProps) => {
 
       {/* Messages area */}
       <div
-        className="px-3 py-4 flex flex-col gap-2 transition-all duration-500"
-        style={{ background, height: 340 }}
+        className="px-3 py-4 flex flex-col gap-2 transition-all duration-500 relative overflow-hidden"
+        style={{ height: 340 }}
       >
-        {messages.map((msg, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.08, duration: 0.3 }}
-            className={`flex ${msg.sent ? "justify-end" : "justify-start"}`}
-          >
-            <div
-              className={`max-w-[75%] px-3 py-2 rounded-2xl text-xs shadow-sm ${
-                msg.sent
-                  ? "bg-primary text-primary-foreground rounded-br-md"
-                  : "bg-card text-card-foreground rounded-bl-md"
-              }`}
+        <img
+          src={backgroundImage}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
+        />
+        <div className="absolute inset-0 bg-black/10" />
+        <div className="relative z-10 flex flex-col gap-2">
+          {messages.map((msg, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.08, duration: 0.3 }}
+              className={`flex ${msg.sent ? "justify-end" : "justify-start"}`}
             >
-              {msg.text}
-            </div>
-          </motion.div>
-        ))}
+              <div
+                className={`max-w-[75%] px-3 py-2 rounded-2xl text-xs shadow-md ${
+                  msg.sent
+                    ? "bg-primary text-primary-foreground rounded-br-md"
+                    : "bg-card/90 text-card-foreground rounded-bl-md backdrop-blur-sm"
+                }`}
+              >
+                {msg.text}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
 
       {/* Input */}
