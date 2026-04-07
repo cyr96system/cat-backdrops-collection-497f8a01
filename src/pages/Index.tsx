@@ -3,12 +3,21 @@ import { chatThemes } from "@/data/chatThemes";
 import ChatPreview from "@/components/ChatPreview";
 import ThemeGrid from "@/components/ThemeGrid";
 import ProfileSection from "@/components/ProfileSection";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Index = () => {
   const [selected, setSelected] = useState(chatThemes[0]);
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Top bar with toggle */}
+      <div className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
+        <div className="container max-w-6xl flex items-center justify-between py-3 px-4">
+          <h1 className="text-lg font-bold text-foreground">Mon Profil</h1>
+          <ThemeToggle />
+        </div>
+      </div>
+
       <div className="container max-w-6xl py-8 px-4 space-y-10">
         {/* Profile Section */}
         <ProfileSection />
