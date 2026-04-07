@@ -27,7 +27,7 @@ const Index = () => {
 
         {/* Header */}
         <div className="text-center space-y-2">
-          <h1 className="text-3xl font-bold tracking-tight text-foreground">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground">
             Thèmes de Chat
           </h1>
           <p className="text-muted-foreground">
