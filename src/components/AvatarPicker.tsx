@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { avatarOptions, avatarCategories, type AvatarOption } from "@/data/avatarData";
-import { Check, X } from "lucide-react";
+import { avatar3dOptions } from "@/data/avatar3dData";
+import { Check } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 
 interface AvatarPickerProps {
@@ -13,10 +14,12 @@ interface AvatarPickerProps {
 
 const AvatarPicker = ({ open, onClose, onSelect, selected }: AvatarPickerProps) => {
   const [category, setCategory] = useState<string>("Tous");
+  const [style, setStyle] = useState<"manga" | "3d">("manga");
 
+  const sourceOptions = style === "manga" ? avatarOptions : avatar3dOptions;
   const filtered = category === "Tous"
-    ? avatarOptions
-    : avatarOptions.filter((a) => a.category === category);
+    ? sourceOptions
+    : sourceOptions.filter((a) => a.category === category);
 
   return (
     <Dialog open={open} onOpenChange={(v) => !v && onClose()}>
@@ -24,6 +27,30 @@ const AvatarPicker = ({ open, onClose, onSelect, selected }: AvatarPickerProps) 
         <DialogHeader>
           <DialogTitle className="text-xl">Choisir un avatar</DialogTitle>
         </DialogHeader>
+
+        {/* Style toggle */}
+        <div className="flex items-center justify-center gap-1 p-1 bg-secondary rounded-full w-fit mx-auto">
+          <button
+            onClick={() => setStyle("manga")}
+            className={`px-5 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
+              style === "manga"
+                ? "bg-primary text-primary-foreground shadow-md"
+                : "text-secondary-foreground hover:bg-secondary/80"
+            }`}
+          >
+            ✏️ Manga
+          </button>
+          <button
+            onClick={() => setStyle("3d")}
+            className={`px-5 py-1.5 rounded-full text-sm font-medium transition-all duration-200 ${
+              style === "3d"
+                ? "bg-primary text-primary-foreground shadow-md"
+                : "text-secondary-foreground hover:bg-secondary/80"
+            }`}
+          >
+            🎭 3D
+          </button>
+        </div>
 
         {/* Category tabs */}
         <div className="flex gap-2 flex-wrap pb-2">
@@ -48,7 +75,7 @@ const AvatarPicker = ({ open, onClose, onSelect, selected }: AvatarPickerProps) 
             <AnimatePresence mode="popLayout">
               {filtered.map((avatar) => (
                 <motion.button
-                  key={avatar.id}
+                  key={`${style}-${avatar.id}`}
                   layout
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
