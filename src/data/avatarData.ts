@@ -61,12 +61,24 @@ import child17 from "@/assets/avatars/child-17.jpg";
 import child18 from "@/assets/avatars/child-18.jpg";
 import child19 from "@/assets/avatars/child-19.jpg";
 import child20 from "@/assets/avatars/child-20.jpg";
+// Extras
+import extra1 from "@/assets/avatars/extra-1.jpg";
+import extra2 from "@/assets/avatars/extra-2.jpg";
+import extra3 from "@/assets/avatars/extra-3.jpg";
+import extra4 from "@/assets/avatars/extra-4.jpg";
+import extra5 from "@/assets/avatars/extra-5.jpg";
+import extra6 from "@/assets/avatars/extra-6.jpg";
+import extra7 from "@/assets/avatars/extra-7.jpg";
+import extra8 from "@/assets/avatars/extra-8.jpg";
+// Babies
+import baby1 from "@/assets/avatars/baby-1.jpg";
+import baby2 from "@/assets/avatars/baby-2.jpg";
 
 export interface AvatarOption {
   id: number;
   name: string;
   image: string;
-  category: "Homme" | "Femme" | "Enfant";
+  category: "Homme" | "Femme" | "Enfant" | "Bébé";
 }
 
 export const avatarOptions: AvatarOption[] = [
