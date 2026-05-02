@@ -143,4 +143,18 @@ export const avatar3dOptions: AvatarOption[] = [
   { id: 158, name: "Papillon", image: child18, category: "Enfant" },
   { id: 159, name: "Roboticien", image: child19, category: "Enfant" },
   { id: 160, name: "Panda", image: child20, category: "Enfant" },
+  // Extras 3D (13)
+  { id: 161, name: "Aventurier", image: extra1, category: "Homme" },
+  { id: 162, name: "Glamour", image: extra2, category: "Femme" },
+  { id: 163, name: "Viking", image: extra3, category: "Homme" },
+  { id: 164, name: "Fée Magique", image: extra4, category: "Femme" },
+  { id: 165, name: "Pilote", image: extra5, category: "Enfant" },
+  { id: 166, name: "Super Fille", image: extra6, category: "Enfant" },
+  { id: 167, name: "Cowboy", image: extra7, category: "Homme" },
+  { id: 168, name: "Yogi", image: extra8, category: "Femme" },
+  { id: 169, name: "DJ Pro", image: extra9, category: "Homme" },
+  { id: 170, name: "Jardinière", image: extra10, category: "Femme" },
+  { id: 171, name: "Bébé Joyeux", image: baby1, category: "Bébé" },
+  { id: 172, name: "Bébé Rose", image: baby2, category: "Bébé" },
+  { id: 173, name: "Bébé Chef", image: baby3, category: "Bébé" },
 ];
