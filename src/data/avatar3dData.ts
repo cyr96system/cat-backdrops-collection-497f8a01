@@ -61,6 +61,21 @@ import child17 from "@/assets/avatars-3d/child-17.jpg";
 import child18 from "@/assets/avatars-3d/child-18.jpg";
 import child19 from "@/assets/avatars-3d/child-19.jpg";
 import child20 from "@/assets/avatars-3d/child-20.jpg";
+// Extras 3D
+import extra1 from "@/assets/avatars-3d/extra-1.jpg";
+import extra2 from "@/assets/avatars-3d/extra-2.jpg";
+import extra3 from "@/assets/avatars-3d/extra-3.jpg";
+import extra4 from "@/assets/avatars-3d/extra-4.jpg";
+import extra5 from "@/assets/avatars-3d/extra-5.jpg";
+import extra6 from "@/assets/avatars-3d/extra-6.jpg";
+import extra7 from "@/assets/avatars-3d/extra-7.jpg";
+import extra8 from "@/assets/avatars-3d/extra-8.jpg";
+import extra9 from "@/assets/avatars-3d/extra-9.jpg";
+import extra10 from "@/assets/avatars-3d/extra-10.jpg";
+// Babies 3D
+import baby1 from "@/assets/avatars-3d/baby-1.jpg";
+import baby2 from "@/assets/avatars-3d/baby-2.jpg";
+import baby3 from "@/assets/avatars-3d/baby-3.jpg";
 
 import type { AvatarOption } from "./avatarData";
 
