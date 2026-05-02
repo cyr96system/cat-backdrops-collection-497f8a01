@@ -61,6 +61,21 @@ import child17 from "@/assets/avatars-3d/child-17.jpg";
 import child18 from "@/assets/avatars-3d/child-18.jpg";
 import child19 from "@/assets/avatars-3d/child-19.jpg";
 import child20 from "@/assets/avatars-3d/child-20.jpg";
+// Extras 3D
+import extra1 from "@/assets/avatars-3d/extra-1.jpg";
+import extra2 from "@/assets/avatars-3d/extra-2.jpg";
+import extra3 from "@/assets/avatars-3d/extra-3.jpg";
+import extra4 from "@/assets/avatars-3d/extra-4.jpg";
+import extra5 from "@/assets/avatars-3d/extra-5.jpg";
+import extra6 from "@/assets/avatars-3d/extra-6.jpg";
+import extra7 from "@/assets/avatars-3d/extra-7.jpg";
+import extra8 from "@/assets/avatars-3d/extra-8.jpg";
+import extra9 from "@/assets/avatars-3d/extra-9.jpg";
+import extra10 from "@/assets/avatars-3d/extra-10.jpg";
+// Babies 3D
+import baby1 from "@/assets/avatars-3d/baby-1.jpg";
+import baby2 from "@/assets/avatars-3d/baby-2.jpg";
+import baby3 from "@/assets/avatars-3d/baby-3.jpg";
 
 import type { AvatarOption } from "./avatarData";
 
@@ -128,4 +143,18 @@ export const avatar3dOptions: AvatarOption[] = [
   { id: 158, name: "Papillon", image: child18, category: "Enfant" },
   { id: 159, name: "Roboticien", image: child19, category: "Enfant" },
   { id: 160, name: "Panda", image: child20, category: "Enfant" },
+  // Extras 3D (13)
+  { id: 161, name: "Aventurier", image: extra1, category: "Homme" },
+  { id: 162, name: "Glamour", image: extra2, category: "Femme" },
+  { id: 163, name: "Viking", image: extra3, category: "Homme" },
+  { id: 164, name: "Fée Magique", image: extra4, category: "Femme" },
+  { id: 165, name: "Pilote", image: extra5, category: "Enfant" },
+  { id: 166, name: "Super Fille", image: extra6, category: "Enfant" },
+  { id: 167, name: "Cowboy", image: extra7, category: "Homme" },
+  { id: 168, name: "Yogi", image: extra8, category: "Femme" },
+  { id: 169, name: "DJ Pro", image: extra9, category: "Homme" },
+  { id: 170, name: "Jardinière", image: extra10, category: "Femme" },
+  { id: 171, name: "Bébé Joyeux", image: baby1, category: "Bébé" },
+  { id: 172, name: "Bébé Rose", image: baby2, category: "Bébé" },
+  { id: 173, name: "Bébé Chef", image: baby3, category: "Bébé" },
 ];

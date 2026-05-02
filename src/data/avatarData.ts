@@ -61,12 +61,24 @@ import child17 from "@/assets/avatars/child-17.jpg";
 import child18 from "@/assets/avatars/child-18.jpg";
 import child19 from "@/assets/avatars/child-19.jpg";
 import child20 from "@/assets/avatars/child-20.jpg";
+// Extras
+import extra1 from "@/assets/avatars/extra-1.jpg";
+import extra2 from "@/assets/avatars/extra-2.jpg";
+import extra3 from "@/assets/avatars/extra-3.jpg";
+import extra4 from "@/assets/avatars/extra-4.jpg";
+import extra5 from "@/assets/avatars/extra-5.jpg";
+import extra6 from "@/assets/avatars/extra-6.jpg";
+import extra7 from "@/assets/avatars/extra-7.jpg";
+import extra8 from "@/assets/avatars/extra-8.jpg";
+// Babies
+import baby1 from "@/assets/avatars/baby-1.jpg";
+import baby2 from "@/assets/avatars/baby-2.jpg";
 
 export interface AvatarOption {
   id: number;
   name: string;
   image: string;
-  category: "Homme" | "Femme" | "Enfant";
+  category: "Homme" | "Femme" | "Enfant" | "Bébé";
 }
 
 export const avatarOptions: AvatarOption[] = [
@@ -133,6 +145,17 @@ export const avatarOptions: AvatarOption[] = [
   { id: 58, name: "Plage", image: child18, category: "Enfant" },
   { id: 59, name: "Dragon", image: child19, category: "Enfant" },
   { id: 60, name: "Panda", image: child20, category: "Enfant" },
+  // Extras Manga
+  { id: 61, name: "Mystérieux", image: extra1, category: "Homme" },
+  { id: 62, name: "Sakura Bleue", image: extra2, category: "Femme" },
+  { id: 63, name: "Épéiste", image: extra3, category: "Homme" },
+  { id: 64, name: "Magical Girl", image: extra4, category: "Femme" },
+  { id: 65, name: "Aventurier", image: extra5, category: "Enfant" },
+  { id: 66, name: "Écolière", image: extra6, category: "Enfant" },
+  { id: 67, name: "Chasseur", image: extra7, category: "Homme" },
+  { id: 68, name: "Archère Elfe", image: extra8, category: "Femme" },
+  { id: 69, name: "Bébé Sourire", image: baby1, category: "Bébé" },
+  { id: 70, name: "Bébé Ribbon", image: baby2, category: "Bébé" },
 ];
 
-export const avatarCategories = ["Tous", "Homme", "Femme", "Enfant"] as const;
+export const avatarCategories = ["Tous", "Homme", "Femme", "Enfant", "Bébé"] as const;
