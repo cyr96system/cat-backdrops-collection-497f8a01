@@ -140,3 +140,25 @@ export const girlStickers: Sticker[] = [
   { id: 126, emotion: "Fête", image: g26, character: "girl" },
   { id: 127, emotion: "Choqué", image: g27, character: "girl" },
 ];
+
+export const teenBoyStickers: Sticker[] = [
+  { id: 201, emotion: "Heureux", image: t01, character: "teen-boy" },
+  { id: 202, emotion: "Triste", image: t02, character: "teen-boy" },
+  { id: 203, emotion: "En colère", image: t03, character: "teen-boy" },
+  { id: 204, emotion: "Surpris", image: t04, character: "teen-boy" },
+  { id: 205, emotion: "Amoureux", image: t05, character: "teen-boy" },
+  { id: 206, emotion: "Mort de rire", image: t06, character: "teen-boy" },
+  { id: 207, emotion: "Pleure", image: t07, character: "teen-boy" },
+  { id: 208, emotion: "Apeuré", image: t08, character: "teen-boy" },
+  { id: 209, emotion: "Endormi", image: t09, character: "teen-boy" },
+  { id: 210, emotion: "Réfléchit", image: t10, character: "teen-boy" },
+  { id: 211, emotion: "Clin d'œil", image: t11, character: "teen-boy" },
+  { id: 212, emotion: "Timide", image: t12, character: "teen-boy" },
+  { id: 213, emotion: "Confus", image: t13, character: "teen-boy" },
+  { id: 214, emotion: "Cool", image: t14, character: "teen-boy" },
+  { id: 215, emotion: "Taquin", image: t15, character: "teen-boy" },
+  { id: 217, emotion: "Excité", image: t17, character: "teen-boy" },
+  { id: 218, emotion: "Ennuyé", image: t18, character: "teen-boy" },
+  { id: 219, emotion: "Malade", image: t19, character: "teen-boy" },
+  { id: 220, emotion: "Affamé", image: t20, character: "teen-boy" },
+];
