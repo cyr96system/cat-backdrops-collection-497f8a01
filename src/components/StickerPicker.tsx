@@ -1,20 +1,27 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { boyStickers, girlStickers, type Sticker } from "@/data/stickerData";
+import { boyStickers, girlStickers, teenBoyStickers, type Sticker } from "@/data/stickerData";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 interface StickerPickerProps {
   onSelect?: (sticker: Sticker) => void;
 }
 
-type StickerCharacter = "boy" | "girl";
+type StickerCharacter = "boy" | "girl" | "teen-boy";
+
+const CHARACTER_LABELS: Record<StickerCharacter, string> = {
+  boy: "Garçon",
+  girl: "Fille",
+  "teen-boy": "Ado masculin",
+};
 
 const StickerPicker = ({ onSelect }: StickerPickerProps) => {
   const [character, setCharacter] = useState<StickerCharacter>("boy");
-  const stickers = useMemo(
-    () => (character === "boy" ? boyStickers : girlStickers),
-    [character],
-  );
+  const stickers = useMemo(() => {
+    if (character === "boy") return boyStickers;
+    if (character === "girl") return girlStickers;
+    return teenBoyStickers;
+  }, [character]);
   const [selected, setSelected] = useState<Sticker | null>(stickers[0] ?? null);
 
   useEffect(() => {
