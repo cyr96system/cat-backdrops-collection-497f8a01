@@ -1,13 +1,25 @@
-import { useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { boyStickers, type Sticker } from "@/data/stickerData";
+import { boyStickers, girlStickers, type Sticker } from "@/data/stickerData";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 interface StickerPickerProps {
   onSelect?: (sticker: Sticker) => void;
 }
 
+type StickerCharacter = "boy" | "girl";
+
 const StickerPicker = ({ onSelect }: StickerPickerProps) => {
-  const [selected, setSelected] = useState<Sticker | null>(null);
+  const [character, setCharacter] = useState<StickerCharacter>("boy");
+  const stickers = useMemo(
+    () => (character === "boy" ? boyStickers : girlStickers),
+    [character],
+  );
+  const [selected, setSelected] = useState<Sticker | null>(stickers[0] ?? null);
+
+  useEffect(() => {
+    setSelected(stickers[0] ?? null);
+  }, [stickers]);
 
   const handleSelect = (sticker: Sticker) => {
     setSelected(sticker);
@@ -16,36 +28,64 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
 
   return (
     <section className="space-y-6">
-      <div className="text-center space-y-2">
+      <div className="text-center space-y-3">
         <h2 className="text-3xl font-bold tracking-tight text-foreground">
           Stickers Manga
         </h2>
         <p className="text-muted-foreground">
-          27 émotions d'un même personnage — utilisables dans vos discussions
+          27 émotions cohérentes par personnage — utilisables dans vos discussions
         </p>
+        <div className="flex justify-center">
+          <ToggleGroup
+            type="single"
+            value={character}
+            onValueChange={(value) => {
+              if (value === "boy" || value === "girl") setCharacter(value);
+            }}
+            variant="outline"
+            className="rounded-xl border border-border bg-muted/40 p-1"
+            aria-label="Choix du personnage"
+          >
+            <ToggleGroupItem
+              value="boy"
+              className="min-w-24 rounded-lg px-4 data-[state=on]:bg-background data-[state=on]:text-foreground"
+              aria-label="Afficher les stickers garçon"
+            >
+              Garçon
+            </ToggleGroupItem>
+            <ToggleGroupItem
+              value="girl"
+              className="min-w-24 rounded-lg px-4 data-[state=on]:bg-background data-[state=on]:text-foreground"
+              aria-label="Afficher les stickers fille"
+            >
+              Fille
+            </ToggleGroupItem>
+          </ToggleGroup>
+        </div>
       </div>
 
       {selected && (
         <motion.div
+          key={selected.id}
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center gap-2"
         >
-          <div className="w-32 h-32 rounded-2xl bg-muted/40 flex items-center justify-center p-2">
+          <div className="flex h-32 w-32 items-center justify-center rounded-2xl bg-muted/40 p-2">
             <img
               src={selected.image}
               alt={selected.emotion}
-              className="w-full h-full object-contain"
+              className="h-full w-full object-contain"
             />
           </div>
           <span className="text-sm font-medium text-foreground">
-            {selected.emotion}
+            {selected.emotion} · {character === "boy" ? "Garçon" : "Fille"}
           </span>
         </motion.div>
       )}
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-3">
-        {boyStickers.map((sticker) => {
+      <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-9">
+        {stickers.map((sticker) => {
           const isActive = selected?.id === sticker.id;
           return (
             <motion.button
@@ -53,7 +93,7 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.92 }}
               onClick={() => handleSelect(sticker)}
-              className={`group aspect-square rounded-xl p-1.5 transition-all border-2 ${
+              className={`group aspect-square rounded-xl border-2 p-1.5 transition-all ${
                 isActive
                   ? "border-primary bg-primary/10 shadow-lg shadow-primary/20"
                   : "border-transparent bg-muted/30 hover:bg-muted/60"
@@ -67,7 +107,7 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
                 loading="lazy"
                 width={512}
                 height={512}
-                className="w-full h-full object-contain drop-shadow-sm"
+                className="h-full w-full object-contain drop-shadow-sm"
               />
             </motion.button>
           );
