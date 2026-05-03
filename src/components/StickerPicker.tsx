@@ -95,7 +95,7 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
             />
           </div>
           <span className="text-sm font-medium text-foreground">
-            {selected.emotion} · {character === "boy" ? "Garçon" : "Fille"}
+            {selected.emotion} · {CHARACTER_LABELS[character]}
           </span>
         </motion.div>
       )}
