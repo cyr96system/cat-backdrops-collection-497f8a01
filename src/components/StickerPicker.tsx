@@ -47,10 +47,12 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
             type="single"
             value={character}
             onValueChange={(value) => {
-              if (value === "boy" || value === "girl") setCharacter(value);
+              if (value === "boy" || value === "girl" || value === "teen-boy") {
+                setCharacter(value);
+              }
             }}
             variant="outline"
-            className="rounded-xl border border-border bg-muted/40 p-1"
+            className="flex flex-wrap rounded-xl border border-border bg-muted/40 p-1"
             aria-label="Choix du personnage"
           >
             <ToggleGroupItem
@@ -66,6 +68,13 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
               aria-label="Afficher les stickers fille"
             >
               Fille
+            </ToggleGroupItem>
+            <ToggleGroupItem
+              value="teen-boy"
+              className="min-w-24 rounded-lg px-4 data-[state=on]:bg-background data-[state=on]:text-foreground"
+              aria-label="Afficher les stickers ado masculin"
+            >
+              Ado masculin
             </ToggleGroupItem>
           </ToggleGroup>
         </div>
