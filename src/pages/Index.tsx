@@ -5,6 +5,7 @@ import ThemeGrid from "@/components/ThemeGrid";
 import ProfileSection from "@/components/ProfileSection";
 import ThemeToggle from "@/components/ThemeToggle";
 import StickerPicker from "@/components/StickerPicker";
+import ChatStickerDemo from "@/components/ChatStickerDemo";
 
 const Index = () => {
   const [selected, setSelected] = useState(chatThemes[0]);
@@ -61,6 +62,12 @@ const Index = () => {
 
         {/* Stickers */}
         <StickerPicker />
+
+        {/* Separator */}
+        <div className="border-t border-border" />
+
+        {/* Chat demo with stickers */}
+        <ChatStickerDemo />
       </div>
     </div>
   );
