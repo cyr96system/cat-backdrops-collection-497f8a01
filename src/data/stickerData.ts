@@ -54,6 +54,34 @@ import g25 from "@/assets/stickers/girl/25-wave.png";
 import g26 from "@/assets/stickers/girl/26-party.png";
 import g27 from "@/assets/stickers/girl/27-shocked.png";
 
+import t01 from "@/assets/stickers/teen-boy/01-happy.png";
+import t02 from "@/assets/stickers/teen-boy/02-sad.png";
+import t03 from "@/assets/stickers/teen-boy/03-angry.png";
+import t04 from "@/assets/stickers/teen-boy/04-surprised.png";
+import t05 from "@/assets/stickers/teen-boy/05-love.png";
+import t06 from "@/assets/stickers/teen-boy/06-laughing.png";
+import t07 from "@/assets/stickers/teen-boy/07-crying.png";
+import t08 from "@/assets/stickers/teen-boy/08-scared.png";
+import t09 from "@/assets/stickers/teen-boy/09-sleeping.png";
+import t10 from "@/assets/stickers/teen-boy/10-thinking.png";
+import t11 from "@/assets/stickers/teen-boy/11-wink.png";
+import t12 from "@/assets/stickers/teen-boy/12-shy.png";
+import t13 from "@/assets/stickers/teen-boy/13-confused.png";
+import t14 from "@/assets/stickers/teen-boy/14-cool.png";
+import t15 from "@/assets/stickers/teen-boy/15-tongue.png";
+import t16 from "@/assets/stickers/teen-boy/16-embarrassed.png";
+import t17 from "@/assets/stickers/teen-boy/17-excited.png";
+import t18 from "@/assets/stickers/teen-boy/18-bored.png";
+import t19 from "@/assets/stickers/teen-boy/19-sick.png";
+import t20 from "@/assets/stickers/teen-boy/20-hungry.png";
+import t21 from "@/assets/stickers/teen-boy/21-clap.png";
+import t22 from "@/assets/stickers/teen-boy/22-heart-hands.png";
+import t23 from "@/assets/stickers/teen-boy/23-thumbs-up.png";
+import t24 from "@/assets/stickers/teen-boy/24-no.png";
+import t25 from "@/assets/stickers/teen-boy/25-wave.png";
+import t26 from "@/assets/stickers/teen-boy/26-party.png";
+import t27 from "@/assets/stickers/teen-boy/27-shocked.png";
+
 
 export interface Sticker {
   id: number;
@@ -122,4 +150,32 @@ export const girlStickers: Sticker[] = [
   { id: 127, emotion: "Choqué", image: g27, character: "girl" },
 ];
 
-export const teenBoyStickers: Sticker[] = [];
+export const teenBoyStickers: Sticker[] = [
+  { id: 201, emotion: "Heureux", image: t01, character: "teen-boy" },
+  { id: 202, emotion: "Triste", image: t02, character: "teen-boy" },
+  { id: 203, emotion: "En colère", image: t03, character: "teen-boy" },
+  { id: 204, emotion: "Surpris", image: t04, character: "teen-boy" },
+  { id: 205, emotion: "Amoureux", image: t05, character: "teen-boy" },
+  { id: 206, emotion: "Mort de rire", image: t06, character: "teen-boy" },
+  { id: 207, emotion: "Pleure", image: t07, character: "teen-boy" },
+  { id: 208, emotion: "Apeuré", image: t08, character: "teen-boy" },
+  { id: 209, emotion: "Endormi", image: t09, character: "teen-boy" },
+  { id: 210, emotion: "Réfléchit", image: t10, character: "teen-boy" },
+  { id: 211, emotion: "Clin d'œil", image: t11, character: "teen-boy" },
+  { id: 212, emotion: "Timide", image: t12, character: "teen-boy" },
+  { id: 213, emotion: "Confus", image: t13, character: "teen-boy" },
+  { id: 214, emotion: "Cool", image: t14, character: "teen-boy" },
+  { id: 215, emotion: "Taquin", image: t15, character: "teen-boy" },
+  { id: 216, emotion: "Gêné", image: t16, character: "teen-boy" },
+  { id: 217, emotion: "Excité", image: t17, character: "teen-boy" },
+  { id: 218, emotion: "Ennuyé", image: t18, character: "teen-boy" },
+  { id: 219, emotion: "Malade", image: t19, character: "teen-boy" },
+  { id: 220, emotion: "Affamé", image: t20, character: "teen-boy" },
+  { id: 221, emotion: "Applaudit", image: t21, character: "teen-boy" },
+  { id: 222, emotion: "Cœur", image: t22, character: "teen-boy" },
+  { id: 223, emotion: "Pouce levé", image: t23, character: "teen-boy" },
+  { id: 224, emotion: "Non", image: t24, character: "teen-boy" },
+  { id: 225, emotion: "Salut", image: t25, character: "teen-boy" },
+  { id: 226, emotion: "Fête", image: t26, character: "teen-boy" },
+  { id: 227, emotion: "Choqué", image: t27, character: "teen-boy" },
+];
