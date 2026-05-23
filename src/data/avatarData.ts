@@ -78,7 +78,7 @@ export interface AvatarOption {
   id: number;
   name: string;
   image: string;
-  category: "Homme" | "Femme" | "Enfant" | "Bébé";
+  category: "Homme" | "Femme" | "Enfant" | "Bébé" | "Pro";
 }
 
 export const avatarOptions: AvatarOption[] = [
@@ -158,4 +158,4 @@ export const avatarOptions: AvatarOption[] = [
   { id: 70, name: "Bébé Ribbon", image: baby2, category: "Bébé" },
 ];
 
-export const avatarCategories = ["Tous", "Homme", "Femme", "Enfant", "Bébé"] as const;
+export const avatarCategories = ["Tous", "Homme", "Femme", "Enfant", "Bébé", "Pro"] as const;
