@@ -76,6 +76,13 @@ import extra10 from "@/assets/avatars-3d/extra-10.jpg";
 import baby1 from "@/assets/avatars-3d/baby-1.jpg";
 import baby2 from "@/assets/avatars-3d/baby-2.jpg";
 import baby3 from "@/assets/avatars-3d/baby-3.jpg";
+// Pro 3D
+import gamerMan from "@/assets/avatars-3d/gamer-man.jpg";
+import gamerWoman from "@/assets/avatars-3d/gamer-woman.jpg";
+import developerMan from "@/assets/avatars-3d/developer-man.jpg";
+import developerWoman from "@/assets/avatars-3d/developer-woman.jpg";
+import entrepreneurMan from "@/assets/avatars-3d/entrepreneur-man.jpg";
+import entrepreneurWoman from "@/assets/avatars-3d/entrepreneur-woman.jpg";
 
 import type { AvatarOption } from "./avatarData";
 
@@ -157,4 +164,11 @@ export const avatar3dOptions: AvatarOption[] = [
   { id: 171, name: "Bébé Joyeux", image: baby1, category: "Bébé" },
   { id: 172, name: "Bébé Rose", image: baby2, category: "Bébé" },
   { id: 173, name: "Bébé Chef", image: baby3, category: "Bébé" },
+  // Pro
+  { id: 174, name: "Gameur", image: gamerMan, category: "Pro" },
+  { id: 175, name: "Gameuse", image: gamerWoman, category: "Pro" },
+  { id: 176, name: "Développeur", image: developerMan, category: "Pro" },
+  { id: 177, name: "Développeuse", image: developerWoman, category: "Pro" },
+  { id: 178, name: "Entrepreneur", image: entrepreneurMan, category: "Pro" },
+  { id: 179, name: "Entrepreneuse", image: entrepreneurWoman, category: "Pro" },
 ];
