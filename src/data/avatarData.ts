@@ -78,7 +78,7 @@ export interface AvatarOption {
   id: number;
   name: string;
   image: string;
-  category: "Homme" | "Femme" | "Enfant" | "Bébé";
+  category: "Homme" | "Femme" | "Enfant" | "Bébé" | "Pro";
 }
 
 export const avatarOptions: AvatarOption[] = [
