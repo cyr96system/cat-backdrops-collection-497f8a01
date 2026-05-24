@@ -1,37 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Smile, Send } from "lucide-react";
-import { boyStickers, girlStickers, teenBoyStickers, type Sticker } from "@/data/stickerData";
+import { boyStickers, girlStickers, teenBoyStickers, teenGirlStickers, type Sticker } from "@/data/stickerData";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 
-type StickerCharacter = "boy" | "girl" | "teen-boy";
-
-interface ChatMessage {
-  id: number;
-  sent: boolean;
-  type: "text" | "sticker";
-  text?: string;
-  sticker?: Sticker;
-}
-
-const initial: ChatMessage[] = [
-  { id: 1, sent: false, type: "text", text: "Salut ! Teste tes stickers ici 👇" },
-  { id: 2, sent: true, type: "text", text: "OK j'envoie !" },
-];
-
-const ChatStickerDemo = () => {
-  const [messages, setMessages] = useState<ChatMessage[]>(initial);
-  const [input, setInput] = useState("");
-  const [character, setCharacter] = useState<StickerCharacter>("boy");
-  const [open, setOpen] = useState(false);
-  const scrollRef = useRef<HTMLDivElement>(null);
-
+type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl";
+...
   const stickers = useMemo(() => {
     if (character === "boy") return boyStickers;
     if (character === "girl") return girlStickers;
-    return teenBoyStickers;
+    if (character === "teen-boy") return teenBoyStickers;
+    return teenGirlStickers;
   }, [character]);
 
   useEffect(() => {
@@ -119,10 +100,10 @@ const ChatStickerDemo = () => {
                   type="single"
                   value={character}
                   onValueChange={(v) => {
-                    if (v === "boy" || v === "girl" || v === "teen-boy") setCharacter(v);
+                    if (v === "boy" || v === "girl" || v === "teen-boy" || v === "teen-girl") setCharacter(v);
                   }}
                   variant="outline"
-                  className="flex w-full rounded-lg border border-border bg-muted/40 p-1"
+                  className="flex w-full flex-wrap rounded-lg border border-border bg-muted/40 p-1"
                 >
                   <ToggleGroupItem value="boy" className="flex-1 rounded-md text-xs data-[state=on]:bg-background">
                     Garçon
@@ -132,6 +113,9 @@ const ChatStickerDemo = () => {
                   </ToggleGroupItem>
                   <ToggleGroupItem value="teen-boy" className="flex-1 rounded-md text-xs data-[state=on]:bg-background">
                     Ado M
+                  </ToggleGroupItem>
+                  <ToggleGroupItem value="teen-girl" className="flex-1 rounded-md text-xs data-[state=on]:bg-background">
+                    Ado F
                   </ToggleGroupItem>
                 </ToggleGroup>
 

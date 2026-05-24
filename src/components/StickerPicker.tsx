@@ -1,26 +1,22 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { boyStickers, girlStickers, teenBoyStickers, type Sticker } from "@/data/stickerData";
+import { boyStickers, girlStickers, teenBoyStickers, teenGirlStickers, type Sticker } from "@/data/stickerData";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
-
-interface StickerPickerProps {
-  onSelect?: (sticker: Sticker) => void;
-}
-
-type StickerCharacter = "boy" | "girl" | "teen-boy";
+...
+type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl";
 
 const CHARACTER_LABELS: Record<StickerCharacter, string> = {
   boy: "Garçon",
   girl: "Fille",
   "teen-boy": "Ado masculin",
+  "teen-girl": "Ado féminin",
 };
-
-const StickerPicker = ({ onSelect }: StickerPickerProps) => {
-  const [character, setCharacter] = useState<StickerCharacter>("boy");
+...
   const stickers = useMemo(() => {
     if (character === "boy") return boyStickers;
     if (character === "girl") return girlStickers;
-    return teenBoyStickers;
+    if (character === "teen-boy") return teenBoyStickers;
+    return teenGirlStickers;
   }, [character]);
   const [selected, setSelected] = useState<Sticker | null>(stickers[0] ?? null);
 
@@ -47,7 +43,7 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
             type="single"
             value={character}
             onValueChange={(value) => {
-              if (value === "boy" || value === "girl" || value === "teen-boy") {
+              if (value === "boy" || value === "girl" || value === "teen-boy" || value === "teen-girl") {
                 setCharacter(value);
               }
             }}
@@ -75,6 +71,13 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
               aria-label="Afficher les stickers ado masculin"
             >
               Ado masculin
+            </ToggleGroupItem>
+            <ToggleGroupItem
+              value="teen-girl"
+              className="min-w-24 rounded-lg px-4 data-[state=on]:bg-background data-[state=on]:text-foreground"
+              aria-label="Afficher les stickers ado féminin"
+            >
+              Ado féminin
             </ToggleGroupItem>
           </ToggleGroup>
         </div>

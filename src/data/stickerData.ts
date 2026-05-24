@@ -82,12 +82,39 @@ import t25 from "@/assets/stickers/teen-boy/25-wave.png";
 import t26 from "@/assets/stickers/teen-boy/26-party.png";
 import t27 from "@/assets/stickers/teen-boy/27-shocked.png";
 
+import tg01 from "@/assets/stickers/teen-girl/01-happy.png";
+import tg02 from "@/assets/stickers/teen-girl/02-sad.png";
+import tg03 from "@/assets/stickers/teen-girl/03-angry.png";
+import tg04 from "@/assets/stickers/teen-girl/04-surprised.png";
+import tg05 from "@/assets/stickers/teen-girl/05-love.png";
+import tg06 from "@/assets/stickers/teen-girl/06-laughing.png";
+import tg07 from "@/assets/stickers/teen-girl/07-crying.png";
+import tg08 from "@/assets/stickers/teen-girl/08-scared.png";
+import tg09 from "@/assets/stickers/teen-girl/09-sleeping.png";
+import tg10 from "@/assets/stickers/teen-girl/10-thinking.png";
+import tg11 from "@/assets/stickers/teen-girl/11-wink.png";
+import tg12 from "@/assets/stickers/teen-girl/12-shy.png";
+import tg13 from "@/assets/stickers/teen-girl/13-confused.png";
+import tg14 from "@/assets/stickers/teen-girl/14-cool.png";
+import tg15 from "@/assets/stickers/teen-girl/15-tongue.png";
+import tg16 from "@/assets/stickers/teen-girl/16-embarrassed.png";
+import tg17 from "@/assets/stickers/teen-girl/17-excited.png";
+import tg18 from "@/assets/stickers/teen-girl/18-bored.png";
+import tg19 from "@/assets/stickers/teen-girl/19-sick.png";
+import tg20 from "@/assets/stickers/teen-girl/20-hungry.png";
+import tg21 from "@/assets/stickers/teen-girl/21-clap.png";
+import tg22 from "@/assets/stickers/teen-girl/22-heart-hands.png";
+import tg23 from "@/assets/stickers/teen-girl/23-thumbs-up.png";
+import tg24 from "@/assets/stickers/teen-girl/24-no.png";
+import tg25 from "@/assets/stickers/teen-girl/25-wave.png";
+import tg26 from "@/assets/stickers/teen-girl/26-party.png";
+import tg27 from "@/assets/stickers/teen-girl/27-shocked.png";
 
 export interface Sticker {
   id: number;
   emotion: string;
   image: string;
-  character: "boy" | "girl" | "teen-boy" | "man" | "woman";
+  character: "boy" | "girl" | "teen-boy" | "teen-girl" | "man" | "woman";
 }
 
 export const boyStickers: Sticker[] = [
@@ -178,4 +205,34 @@ export const teenBoyStickers: Sticker[] = [
   { id: 225, emotion: "Salut", image: t25, character: "teen-boy" },
   { id: 226, emotion: "Fête", image: t26, character: "teen-boy" },
   { id: 227, emotion: "Choqué", image: t27, character: "teen-boy" },
+];
+
+export const teenGirlStickers: Sticker[] = [
+  { id: 301, emotion: "Heureux", image: tg01, character: "teen-girl" },
+  { id: 302, emotion: "Triste", image: tg02, character: "teen-girl" },
+  { id: 303, emotion: "En colère", image: tg03, character: "teen-girl" },
+  { id: 304, emotion: "Surpris", image: tg04, character: "teen-girl" },
+  { id: 305, emotion: "Amoureux", image: tg05, character: "teen-girl" },
+  { id: 306, emotion: "Mort de rire", image: tg06, character: "teen-girl" },
+  { id: 307, emotion: "Pleure", image: tg07, character: "teen-girl" },
+  { id: 308, emotion: "Apeuré", image: tg08, character: "teen-girl" },
+  { id: 309, emotion: "Endormi", image: tg09, character: "teen-girl" },
+  { id: 310, emotion: "Réfléchit", image: tg10, character: "teen-girl" },
+  { id: 311, emotion: "Clin d'œil", image: tg11, character: "teen-girl" },
+  { id: 312, emotion: "Timide", image: tg12, character: "teen-girl" },
+  { id: 313, emotion: "Confus", image: tg13, character: "teen-girl" },
+  { id: 314, emotion: "Cool", image: tg14, character: "teen-girl" },
+  { id: 315, emotion: "Taquin", image: tg15, character: "teen-girl" },
+  { id: 316, emotion: "Gêné", image: tg16, character: "teen-girl" },
+  { id: 317, emotion: "Excité", image: tg17, character: "teen-girl" },
+  { id: 318, emotion: "Ennuyé", image: tg18, character: "teen-girl" },
+  { id: 319, emotion: "Malade", image: tg19, character: "teen-girl" },
+  { id: 320, emotion: "Affamé", image: tg20, character: "teen-girl" },
+  { id: 321, emotion: "Applaudit", image: tg21, character: "teen-girl" },
+  { id: 322, emotion: "Cœur", image: tg22, character: "teen-girl" },
+  { id: 323, emotion: "Pouce levé", image: tg23, character: "teen-girl" },
+  { id: 324, emotion: "Non", image: tg24, character: "teen-girl" },
+  { id: 325, emotion: "Salut", image: tg25, character: "teen-girl" },
+  { id: 326, emotion: "Fête", image: tg26, character: "teen-girl" },
+  { id: 327, emotion: "Choqué", image: tg27, character: "teen-girl" },
 ];
