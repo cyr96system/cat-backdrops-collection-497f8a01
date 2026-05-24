@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Smile, Send } from "lucide-react";
-import { boyStickers, girlStickers, teenBoyStickers, type Sticker } from "@/data/stickerData";
+import { boyStickers, girlStickers, teenBoyStickers, teenGirlStickers, type Sticker } from "@/data/stickerData";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 
-type StickerCharacter = "boy" | "girl" | "teen-boy";
+type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl";
 
 interface ChatMessage {
   id: number;
@@ -31,7 +31,8 @@ const ChatStickerDemo = () => {
   const stickers = useMemo(() => {
     if (character === "boy") return boyStickers;
     if (character === "girl") return girlStickers;
-    return teenBoyStickers;
+    if (character === "teen-boy") return teenBoyStickers;
+    return teenGirlStickers;
   }, [character]);
 
   useEffect(() => {
@@ -58,7 +59,6 @@ const ChatStickerDemo = () => {
       </div>
 
       <div className="mx-auto w-full max-w-md overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
-        {/* Header */}
         <div className="flex items-center gap-3 border-b border-border bg-card px-4 py-3">
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/20 text-sm font-bold text-primary">
             A
@@ -69,7 +69,6 @@ const ChatStickerDemo = () => {
           </div>
         </div>
 
-        {/* Messages */}
         <div ref={scrollRef} className="h-96 overflow-y-auto bg-muted/30 px-3 py-4">
           <div className="flex flex-col gap-2">
             <AnimatePresence initial={false}>
@@ -105,7 +104,6 @@ const ChatStickerDemo = () => {
           </div>
         </div>
 
-        {/* Input */}
         <div className="flex items-center gap-2 border-t border-border bg-card px-3 py-2">
           <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger asChild>
@@ -119,10 +117,10 @@ const ChatStickerDemo = () => {
                   type="single"
                   value={character}
                   onValueChange={(v) => {
-                    if (v === "boy" || v === "girl" || v === "teen-boy") setCharacter(v);
+                    if (v === "boy" || v === "girl" || v === "teen-boy" || v === "teen-girl") setCharacter(v);
                   }}
                   variant="outline"
-                  className="flex w-full rounded-lg border border-border bg-muted/40 p-1"
+                  className="flex w-full flex-wrap rounded-lg border border-border bg-muted/40 p-1"
                 >
                   <ToggleGroupItem value="boy" className="flex-1 rounded-md text-xs data-[state=on]:bg-background">
                     Garçon
@@ -132,6 +130,9 @@ const ChatStickerDemo = () => {
                   </ToggleGroupItem>
                   <ToggleGroupItem value="teen-boy" className="flex-1 rounded-md text-xs data-[state=on]:bg-background">
                     Ado M
+                  </ToggleGroupItem>
+                  <ToggleGroupItem value="teen-girl" className="flex-1 rounded-md text-xs data-[state=on]:bg-background">
+                    Ado F
                   </ToggleGroupItem>
                 </ToggleGroup>
 
@@ -165,12 +166,7 @@ const ChatStickerDemo = () => {
             placeholder="Message..."
             className="flex-1 rounded-full bg-muted px-4 py-2 text-sm text-foreground outline-none placeholder:text-muted-foreground focus:ring-2 focus:ring-primary/30"
           />
-          <Button
-            onClick={sendText}
-            size="icon"
-            className="h-9 w-9 shrink-0 rounded-full"
-            aria-label="Envoyer"
-          >
+          <Button onClick={sendText} size="icon" className="h-9 w-9 shrink-0 rounded-full" aria-label="Envoyer">
             <Send className="h-4 w-4" />
           </Button>
         </div>

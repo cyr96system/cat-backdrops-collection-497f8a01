@@ -1,18 +1,19 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { boyStickers, girlStickers, teenBoyStickers, type Sticker } from "@/data/stickerData";
+import { boyStickers, girlStickers, teenBoyStickers, teenGirlStickers, type Sticker } from "@/data/stickerData";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 interface StickerPickerProps {
   onSelect?: (sticker: Sticker) => void;
 }
 
-type StickerCharacter = "boy" | "girl" | "teen-boy";
+type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl";
 
 const CHARACTER_LABELS: Record<StickerCharacter, string> = {
   boy: "Garçon",
   girl: "Fille",
   "teen-boy": "Ado masculin",
+  "teen-girl": "Ado féminin",
 };
 
 const StickerPicker = ({ onSelect }: StickerPickerProps) => {
@@ -20,7 +21,8 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
   const stickers = useMemo(() => {
     if (character === "boy") return boyStickers;
     if (character === "girl") return girlStickers;
-    return teenBoyStickers;
+    if (character === "teen-boy") return teenBoyStickers;
+    return teenGirlStickers;
   }, [character]);
   const [selected, setSelected] = useState<Sticker | null>(stickers[0] ?? null);
 
@@ -36,9 +38,7 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
   return (
     <section className="space-y-6">
       <div className="text-center space-y-3">
-        <h2 className="text-3xl font-bold tracking-tight text-foreground">
-          Stickers Manga
-        </h2>
+        <h2 className="text-3xl font-bold tracking-tight text-foreground">Stickers Manga</h2>
         <p className="text-muted-foreground">
           27 émotions cohérentes par personnage — utilisables dans vos discussions
         </p>
@@ -47,7 +47,7 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
             type="single"
             value={character}
             onValueChange={(value) => {
-              if (value === "boy" || value === "girl" || value === "teen-boy") {
+              if (value === "boy" || value === "girl" || value === "teen-boy" || value === "teen-girl") {
                 setCharacter(value);
               }
             }}
@@ -76,6 +76,13 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
             >
               Ado masculin
             </ToggleGroupItem>
+            <ToggleGroupItem
+              value="teen-girl"
+              className="min-w-24 rounded-lg px-4 data-[state=on]:bg-background data-[state=on]:text-foreground"
+              aria-label="Afficher les stickers ado féminin"
+            >
+              Ado féminin
+            </ToggleGroupItem>
           </ToggleGroup>
         </div>
       </div>
@@ -88,11 +95,7 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
           className="flex flex-col items-center gap-2"
         >
           <div className="flex h-32 w-32 items-center justify-center rounded-2xl bg-muted/40 p-2">
-            <img
-              src={selected.image}
-              alt={selected.emotion}
-              className="h-full w-full object-contain"
-            />
+            <img src={selected.image} alt={selected.emotion} className="h-full w-full object-contain" />
           </div>
           <span className="text-sm font-medium text-foreground">
             {selected.emotion} · {CHARACTER_LABELS[character]}
