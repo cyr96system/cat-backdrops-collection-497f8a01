@@ -7,7 +7,27 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Button } from "@/components/ui/button";
 
 type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl";
-...
+
+interface ChatMessage {
+  id: number;
+  sent: boolean;
+  type: "text" | "sticker";
+  text?: string;
+  sticker?: Sticker;
+}
+
+const initial: ChatMessage[] = [
+  { id: 1, sent: false, type: "text", text: "Salut ! Teste tes stickers ici 👇" },
+  { id: 2, sent: true, type: "text", text: "OK j'envoie !" },
+];
+
+const ChatStickerDemo = () => {
+  const [messages, setMessages] = useState<ChatMessage[]>(initial);
+  const [input, setInput] = useState("");
+  const [character, setCharacter] = useState<StickerCharacter>("boy");
+  const [open, setOpen] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
   const stickers = useMemo(() => {
     if (character === "boy") return boyStickers;
     if (character === "girl") return girlStickers;
@@ -39,7 +59,6 @@ type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl";
       </div>
 
       <div className="mx-auto w-full max-w-md overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
-        {/* Header */}
         <div className="flex items-center gap-3 border-b border-border bg-card px-4 py-3">
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/20 text-sm font-bold text-primary">
             A
@@ -50,7 +69,6 @@ type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl";
           </div>
         </div>
 
-        {/* Messages */}
         <div ref={scrollRef} className="h-96 overflow-y-auto bg-muted/30 px-3 py-4">
           <div className="flex flex-col gap-2">
             <AnimatePresence initial={false}>
@@ -86,7 +104,6 @@ type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl";
           </div>
         </div>
 
-        {/* Input */}
         <div className="flex items-center gap-2 border-t border-border bg-card px-3 py-2">
           <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger asChild>
@@ -149,12 +166,7 @@ type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl";
             placeholder="Message..."
             className="flex-1 rounded-full bg-muted px-4 py-2 text-sm text-foreground outline-none placeholder:text-muted-foreground focus:ring-2 focus:ring-primary/30"
           />
-          <Button
-            onClick={sendText}
-            size="icon"
-            className="h-9 w-9 shrink-0 rounded-full"
-            aria-label="Envoyer"
-          >
+          <Button onClick={sendText} size="icon" className="h-9 w-9 shrink-0 rounded-full" aria-label="Envoyer">
             <Send className="h-4 w-4" />
           </Button>
         </div>
