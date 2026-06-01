@@ -110,6 +110,34 @@ import tg25 from "@/assets/stickers/teen-girl/25-wave.png";
 import tg26 from "@/assets/stickers/teen-girl/26-party.png";
 import tg27 from "@/assets/stickers/teen-girl/27-shocked.png";
 
+import m01 from "@/assets/stickers/man/01-confident.png";
+import m02 from "@/assets/stickers/man/02-stressed.png";
+import m03 from "@/assets/stickers/man/03-proud.png";
+import m04 from "@/assets/stickers/man/04-exhausted.png";
+import m05 from "@/assets/stickers/man/05-focused.png";
+import m06 from "@/assets/stickers/man/06-satisfied.png";
+import m07 from "@/assets/stickers/man/07-frustrated.png";
+import m08 from "@/assets/stickers/man/08-determined.png";
+import m09 from "@/assets/stickers/man/09-skeptical.png";
+import m10 from "@/assets/stickers/man/10-inspired.png";
+import m11 from "@/assets/stickers/man/11-relaxed.png";
+import m12 from "@/assets/stickers/man/12-anxious.png";
+import m13 from "@/assets/stickers/man/13-victorious.png";
+import m14 from "@/assets/stickers/man/14-disappointed.png";
+import m15 from "@/assets/stickers/man/15-motivated.png";
+import m16 from "@/assets/stickers/man/16-overwhelmed.png";
+import m17 from "@/assets/stickers/man/17-curious.png";
+import m18 from "@/assets/stickers/man/18-serious.png";
+import m19 from "@/assets/stickers/man/19-amused.png";
+import m20 from "@/assets/stickers/man/20-coffee.png";
+import m21 from "@/assets/stickers/man/21-working.png";
+import m22 from "@/assets/stickers/man/22-ok.png";
+import m23 from "@/assets/stickers/man/23-facepalm.png";
+import m24 from "@/assets/stickers/man/24-handshake.png";
+import m25 from "@/assets/stickers/man/25-presenting.png";
+import m26 from "@/assets/stickers/man/26-celebrating.png";
+import m27 from "@/assets/stickers/man/27-shocked.png";
+
 export interface Sticker {
   id: number;
   emotion: string;
@@ -235,4 +263,34 @@ export const teenGirlStickers: Sticker[] = [
   { id: 325, emotion: "Salut", image: tg25, character: "teen-girl" },
   { id: 326, emotion: "Fête", image: tg26, character: "teen-girl" },
   { id: 327, emotion: "Choqué", image: tg27, character: "teen-girl" },
+];
+
+export const manStickers: Sticker[] = [
+  { id: 401, emotion: "Confiant", image: m01, character: "man" },
+  { id: 402, emotion: "Stressé", image: m02, character: "man" },
+  { id: 403, emotion: "Fier", image: m03, character: "man" },
+  { id: 404, emotion: "Épuisé", image: m04, character: "man" },
+  { id: 405, emotion: "Concentré", image: m05, character: "man" },
+  { id: 406, emotion: "Satisfait", image: m06, character: "man" },
+  { id: 407, emotion: "Frustré", image: m07, character: "man" },
+  { id: 408, emotion: "Déterminé", image: m08, character: "man" },
+  { id: 409, emotion: "Sceptique", image: m09, character: "man" },
+  { id: 410, emotion: "Inspiré", image: m10, character: "man" },
+  { id: 411, emotion: "Détendu", image: m11, character: "man" },
+  { id: 412, emotion: "Anxieux", image: m12, character: "man" },
+  { id: 413, emotion: "Victorieux", image: m13, character: "man" },
+  { id: 414, emotion: "Déçu", image: m14, character: "man" },
+  { id: 415, emotion: "Motivé", image: m15, character: "man" },
+  { id: 416, emotion: "Débordé", image: m16, character: "man" },
+  { id: 417, emotion: "Curieux", image: m17, character: "man" },
+  { id: 418, emotion: "Sérieux", image: m18, character: "man" },
+  { id: 419, emotion: "Amusé", image: m19, character: "man" },
+  { id: 420, emotion: "Besoin de café", image: m20, character: "man" },
+  { id: 421, emotion: "Au travail", image: m21, character: "man" },
+  { id: 422, emotion: "OK", image: m22, character: "man" },
+  { id: 423, emotion: "Facepalm", image: m23, character: "man" },
+  { id: 424, emotion: "Poignée de main", image: m24, character: "man" },
+  { id: 425, emotion: "Présentation", image: m25, character: "man" },
+  { id: 426, emotion: "Célèbre", image: m26, character: "man" },
+  { id: 427, emotion: "Choqué", image: m27, character: "man" },
 ];
