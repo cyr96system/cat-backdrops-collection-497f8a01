@@ -1,12 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Smile, Send } from "lucide-react";
-import { boyStickers, girlStickers, teenBoyStickers, teenGirlStickers, manStickers, type Sticker } from "@/data/stickerData";
+import { boyStickers, girlStickers, teenBoyStickers, teenGirlStickers, manStickers, womanStickers, type Sticker } from "@/data/stickerData";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
 
-type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl" | "man";
+type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl" | "man" | "woman";
 
 interface ChatMessage {
   id: number;
@@ -33,7 +33,8 @@ const ChatStickerDemo = () => {
     if (character === "girl") return girlStickers;
     if (character === "teen-boy") return teenBoyStickers;
     if (character === "teen-girl") return teenGirlStickers;
-    return manStickers;
+    if (character === "man") return manStickers;
+    return womanStickers;
   }, [character]);
 
   useEffect(() => {
@@ -118,7 +119,7 @@ const ChatStickerDemo = () => {
                   type="single"
                   value={character}
                   onValueChange={(v) => {
-                    if (v === "boy" || v === "girl" || v === "teen-boy" || v === "teen-girl" || v === "man") setCharacter(v);
+                    if (v === "boy" || v === "girl" || v === "teen-boy" || v === "teen-girl" || v === "man" || v === "woman") setCharacter(v);
                   }}
                   variant="outline"
                   className="flex w-full flex-wrap rounded-lg border border-border bg-muted/40 p-1"
@@ -137,6 +138,9 @@ const ChatStickerDemo = () => {
                   </ToggleGroupItem>
                   <ToggleGroupItem value="man" className="flex-1 rounded-md text-xs data-[state=on]:bg-background">
                     Homme
+                  </ToggleGroupItem>
+                  <ToggleGroupItem value="woman" className="flex-1 rounded-md text-xs data-[state=on]:bg-background">
+                    Femme
                   </ToggleGroupItem>
                 </ToggleGroup>
 
