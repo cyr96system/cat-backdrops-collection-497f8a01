@@ -138,6 +138,34 @@ import m25 from "@/assets/stickers/man/25-presenting.png";
 import m26 from "@/assets/stickers/man/26-celebrating.png";
 import m27 from "@/assets/stickers/man/27-shocked.png";
 
+import w01 from "@/assets/stickers/woman/01-confident.png";
+import w02 from "@/assets/stickers/woman/02-stressed.png";
+import w03 from "@/assets/stickers/woman/03-proud.png";
+import w04 from "@/assets/stickers/woman/04-exhausted.png";
+import w05 from "@/assets/stickers/woman/05-focused.png";
+import w06 from "@/assets/stickers/woman/06-satisfied.png";
+import w07 from "@/assets/stickers/woman/07-frustrated.png";
+import w08 from "@/assets/stickers/woman/08-determined.png";
+import w09 from "@/assets/stickers/woman/09-skeptical.png";
+import w10 from "@/assets/stickers/woman/10-inspired.png";
+import w11 from "@/assets/stickers/woman/11-relaxed.png";
+import w12 from "@/assets/stickers/woman/12-anxious.png";
+import w13 from "@/assets/stickers/woman/13-victorious.png";
+import w14 from "@/assets/stickers/woman/14-disappointed.png";
+import w15 from "@/assets/stickers/woman/15-motivated.png";
+import w16 from "@/assets/stickers/woman/16-overwhelmed.png";
+import w17 from "@/assets/stickers/woman/17-curious.png";
+import w18 from "@/assets/stickers/woman/18-serious.png";
+import w19 from "@/assets/stickers/woman/19-amused.png";
+import w20 from "@/assets/stickers/woman/20-coffee.png";
+import w21 from "@/assets/stickers/woman/21-working.png";
+import w22 from "@/assets/stickers/woman/22-ok.png";
+import w23 from "@/assets/stickers/woman/23-facepalm.png";
+import w24 from "@/assets/stickers/woman/24-handshake.png";
+import w25 from "@/assets/stickers/woman/25-presenting.png";
+import w26 from "@/assets/stickers/woman/26-celebrating.png";
+import w27 from "@/assets/stickers/woman/27-shocked.png";
+
 export interface Sticker {
   id: number;
   emotion: string;
