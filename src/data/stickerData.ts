@@ -166,11 +166,39 @@ import w25 from "@/assets/stickers/woman/25-presenting.png";
 import w26 from "@/assets/stickers/woman/26-celebrating.png";
 import w27 from "@/assets/stickers/woman/27-shocked.png";
 
+import mm01 from "@/assets/stickers/mystery-man/01-mysterious.png";
+import mm02 from "@/assets/stickers/mystery-man/02-brooding.png";
+import mm03 from "@/assets/stickers/mystery-man/03-intense.png";
+import mm04 from "@/assets/stickers/mystery-man/04-surprised.png";
+import mm05 from "@/assets/stickers/mystery-man/05-charming.png";
+import mm06 from "@/assets/stickers/mystery-man/06-dark-laugh.png";
+import mm07 from "@/assets/stickers/mystery-man/07-sad.png";
+import mm08 from "@/assets/stickers/mystery-man/08-alert.png";
+import mm09 from "@/assets/stickers/mystery-man/09-resting.png";
+import mm10 from "@/assets/stickers/mystery-man/10-plotting.png";
+import mm11 from "@/assets/stickers/mystery-man/11-wink.png";
+import mm12 from "@/assets/stickers/mystery-man/12-shy.png";
+import mm13 from "@/assets/stickers/mystery-man/13-confused.png";
+import mm14 from "@/assets/stickers/mystery-man/14-cool.png";
+import mm15 from "@/assets/stickers/mystery-man/15-sly.png";
+import mm16 from "@/assets/stickers/mystery-man/16-embarrassed.png";
+import mm17 from "@/assets/stickers/mystery-man/17-excited.png";
+import mm18 from "@/assets/stickers/mystery-man/18-bored.png";
+import mm19 from "@/assets/stickers/mystery-man/19-wounded.png";
+import mm20 from "@/assets/stickers/mystery-man/20-coffee.png";
+import mm21 from "@/assets/stickers/mystery-man/21-investigating.png";
+import mm22 from "@/assets/stickers/mystery-man/22-ok.png";
+import mm23 from "@/assets/stickers/mystery-man/23-facepalm.png";
+import mm24 from "@/assets/stickers/mystery-man/24-handshake.png";
+import mm25 from "@/assets/stickers/mystery-man/25-presenting.png";
+import mm26 from "@/assets/stickers/mystery-man/26-victorious.png";
+import mm27 from "@/assets/stickers/mystery-man/27-shocked.png";
+
 export interface Sticker {
   id: number;
   emotion: string;
   image: string;
-  character: "boy" | "girl" | "teen-boy" | "teen-girl" | "man" | "woman";
+  character: "boy" | "girl" | "teen-boy" | "teen-girl" | "man" | "woman" | "mystery-man";
 }
 
 export const boyStickers: Sticker[] = [
@@ -351,4 +379,34 @@ export const womanStickers: Sticker[] = [
   { id: 525, emotion: "Présentation", image: w25, character: "woman" },
   { id: 526, emotion: "Célèbre", image: w26, character: "woman" },
   { id: 527, emotion: "Choquée", image: w27, character: "woman" },
+];
+
+export const mysteryManStickers: Sticker[] = [
+  { id: 601, emotion: "Mystérieux", image: mm01, character: "mystery-man" },
+  { id: 602, emotion: "Pensif sombre", image: mm02, character: "mystery-man" },
+  { id: 603, emotion: "Intense", image: mm03, character: "mystery-man" },
+  { id: 604, emotion: "Surpris", image: mm04, character: "mystery-man" },
+  { id: 605, emotion: "Charmeur", image: mm05, character: "mystery-man" },
+  { id: 606, emotion: "Rire sombre", image: mm06, character: "mystery-man" },
+  { id: 607, emotion: "Mélancolique", image: mm07, character: "mystery-man" },
+  { id: 608, emotion: "En alerte", image: mm08, character: "mystery-man" },
+  { id: 609, emotion: "Repos", image: mm09, character: "mystery-man" },
+  { id: 610, emotion: "Stratège", image: mm10, character: "mystery-man" },
+  { id: 611, emotion: "Clin d'œil", image: mm11, character: "mystery-man" },
+  { id: 612, emotion: "Timide", image: mm12, character: "mystery-man" },
+  { id: 613, emotion: "Confus", image: mm13, character: "mystery-man" },
+  { id: 614, emotion: "Cool", image: mm14, character: "mystery-man" },
+  { id: 615, emotion: "Sournois", image: mm15, character: "mystery-man" },
+  { id: 616, emotion: "Gêné", image: mm16, character: "mystery-man" },
+  { id: 617, emotion: "Excité", image: mm17, character: "mystery-man" },
+  { id: 618, emotion: "Ennuyé", image: mm18, character: "mystery-man" },
+  { id: 619, emotion: "Blessé", image: mm19, character: "mystery-man" },
+  { id: 620, emotion: "Café", image: mm20, character: "mystery-man" },
+  { id: 621, emotion: "Enquête", image: mm21, character: "mystery-man" },
+  { id: 622, emotion: "OK", image: mm22, character: "mystery-man" },
+  { id: 623, emotion: "Facepalm", image: mm23, character: "mystery-man" },
+  { id: 624, emotion: "Poignée de main", image: mm24, character: "mystery-man" },
+  { id: 625, emotion: "Indice", image: mm25, character: "mystery-man" },
+  { id: 626, emotion: "Victorieux", image: mm26, character: "mystery-man" },
+  { id: 627, emotion: "Choqué", image: mm27, character: "mystery-man" },
 ];

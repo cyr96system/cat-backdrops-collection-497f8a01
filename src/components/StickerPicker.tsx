@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
-import { boyStickers, girlStickers, teenBoyStickers, teenGirlStickers, manStickers, womanStickers, type Sticker } from "@/data/stickerData";
+import { boyStickers, girlStickers, teenBoyStickers, teenGirlStickers, manStickers, womanStickers, mysteryManStickers, type Sticker } from "@/data/stickerData";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 interface StickerPickerProps {
   onSelect?: (sticker: Sticker) => void;
 }
 
-type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl" | "man" | "woman";
+type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl" | "man" | "woman" | "mystery-man";
 
 const CHARACTER_LABELS: Record<StickerCharacter, string> = {
   boy: "Garçon",
@@ -16,6 +16,7 @@ const CHARACTER_LABELS: Record<StickerCharacter, string> = {
   "teen-girl": "Ado féminin",
   man: "Homme adulte",
   woman: "Femme adulte",
+  "mystery-man": "Homme mystère",
 };
 
 const StickerPicker = ({ onSelect }: StickerPickerProps) => {
@@ -26,7 +27,8 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
     if (character === "teen-boy") return teenBoyStickers;
     if (character === "teen-girl") return teenGirlStickers;
     if (character === "man") return manStickers;
-    return womanStickers;
+    if (character === "woman") return womanStickers;
+    return mysteryManStickers;
   }, [character]);
   const [selected, setSelected] = useState<Sticker | null>(stickers[0] ?? null);
 
@@ -51,7 +53,7 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
             type="single"
             value={character}
             onValueChange={(value) => {
-              if (value === "boy" || value === "girl" || value === "teen-boy" || value === "teen-girl" || value === "man" || value === "woman") {
+              if (value === "boy" || value === "girl" || value === "teen-boy" || value === "teen-girl" || value === "man" || value === "woman" || value === "mystery-man") {
                 setCharacter(value);
               }
             }}
@@ -100,6 +102,13 @@ const StickerPicker = ({ onSelect }: StickerPickerProps) => {
               aria-label="Afficher les stickers femme adulte"
             >
               Femme
+            </ToggleGroupItem>
+            <ToggleGroupItem
+              value="mystery-man"
+              className="min-w-24 rounded-lg px-4 data-[state=on]:bg-background data-[state=on]:text-foreground"
+              aria-label="Afficher les stickers homme mystère"
+            >
+              Mystère
             </ToggleGroupItem>
           </ToggleGroup>
         </div>
