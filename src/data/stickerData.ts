@@ -138,6 +138,34 @@ import m25 from "@/assets/stickers/man/25-presenting.png";
 import m26 from "@/assets/stickers/man/26-celebrating.png";
 import m27 from "@/assets/stickers/man/27-shocked.png";
 
+import w01 from "@/assets/stickers/woman/01-confident.png";
+import w02 from "@/assets/stickers/woman/02-stressed.png";
+import w03 from "@/assets/stickers/woman/03-proud.png";
+import w04 from "@/assets/stickers/woman/04-exhausted.png";
+import w05 from "@/assets/stickers/woman/05-focused.png";
+import w06 from "@/assets/stickers/woman/06-satisfied.png";
+import w07 from "@/assets/stickers/woman/07-frustrated.png";
+import w08 from "@/assets/stickers/woman/08-determined.png";
+import w09 from "@/assets/stickers/woman/09-skeptical.png";
+import w10 from "@/assets/stickers/woman/10-inspired.png";
+import w11 from "@/assets/stickers/woman/11-relaxed.png";
+import w12 from "@/assets/stickers/woman/12-anxious.png";
+import w13 from "@/assets/stickers/woman/13-victorious.png";
+import w14 from "@/assets/stickers/woman/14-disappointed.png";
+import w15 from "@/assets/stickers/woman/15-motivated.png";
+import w16 from "@/assets/stickers/woman/16-overwhelmed.png";
+import w17 from "@/assets/stickers/woman/17-curious.png";
+import w18 from "@/assets/stickers/woman/18-serious.png";
+import w19 from "@/assets/stickers/woman/19-amused.png";
+import w20 from "@/assets/stickers/woman/20-coffee.png";
+import w21 from "@/assets/stickers/woman/21-working.png";
+import w22 from "@/assets/stickers/woman/22-ok.png";
+import w23 from "@/assets/stickers/woman/23-facepalm.png";
+import w24 from "@/assets/stickers/woman/24-handshake.png";
+import w25 from "@/assets/stickers/woman/25-presenting.png";
+import w26 from "@/assets/stickers/woman/26-celebrating.png";
+import w27 from "@/assets/stickers/woman/27-shocked.png";
+
 export interface Sticker {
   id: number;
   emotion: string;
@@ -293,4 +321,34 @@ export const manStickers: Sticker[] = [
   { id: 425, emotion: "Présentation", image: m25, character: "man" },
   { id: 426, emotion: "Célèbre", image: m26, character: "man" },
   { id: 427, emotion: "Choqué", image: m27, character: "man" },
+];
+
+export const womanStickers: Sticker[] = [
+  { id: 501, emotion: "Confiante", image: w01, character: "woman" },
+  { id: 502, emotion: "Stressée", image: w02, character: "woman" },
+  { id: 503, emotion: "Fière", image: w03, character: "woman" },
+  { id: 504, emotion: "Épuisée", image: w04, character: "woman" },
+  { id: 505, emotion: "Concentrée", image: w05, character: "woman" },
+  { id: 506, emotion: "Satisfaite", image: w06, character: "woman" },
+  { id: 507, emotion: "Frustrée", image: w07, character: "woman" },
+  { id: 508, emotion: "Déterminée", image: w08, character: "woman" },
+  { id: 509, emotion: "Sceptique", image: w09, character: "woman" },
+  { id: 510, emotion: "Inspirée", image: w10, character: "woman" },
+  { id: 511, emotion: "Détendue", image: w11, character: "woman" },
+  { id: 512, emotion: "Anxieuse", image: w12, character: "woman" },
+  { id: 513, emotion: "Victorieuse", image: w13, character: "woman" },
+  { id: 514, emotion: "Déçue", image: w14, character: "woman" },
+  { id: 515, emotion: "Motivée", image: w15, character: "woman" },
+  { id: 516, emotion: "Débordée", image: w16, character: "woman" },
+  { id: 517, emotion: "Curieuse", image: w17, character: "woman" },
+  { id: 518, emotion: "Sérieuse", image: w18, character: "woman" },
+  { id: 519, emotion: "Amusée", image: w19, character: "woman" },
+  { id: 520, emotion: "Besoin de café", image: w20, character: "woman" },
+  { id: 521, emotion: "Au travail", image: w21, character: "woman" },
+  { id: 522, emotion: "OK", image: w22, character: "woman" },
+  { id: 523, emotion: "Facepalm", image: w23, character: "woman" },
+  { id: 524, emotion: "Poignée de main", image: w24, character: "woman" },
+  { id: 525, emotion: "Présentation", image: w25, character: "woman" },
+  { id: 526, emotion: "Célèbre", image: w26, character: "woman" },
+  { id: 527, emotion: "Choquée", image: w27, character: "woman" },
 ];
