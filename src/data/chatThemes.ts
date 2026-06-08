@@ -9,6 +9,16 @@ import manga7 from "@/assets/themes/manga-7.jpg";
 import manga8 from "@/assets/themes/manga-8.jpg";
 import manga9 from "@/assets/themes/manga-9.jpg";
 import manga10 from "@/assets/themes/manga-10.jpg";
+import manga11 from "@/assets/themes/manga-11.jpg";
+import manga12 from "@/assets/themes/manga-12.jpg";
+import manga13 from "@/assets/themes/manga-13.jpg";
+import manga14 from "@/assets/themes/manga-14.jpg";
+import manga15 from "@/assets/themes/manga-15.jpg";
+import manga16 from "@/assets/themes/manga-16.jpg";
+import manga17 from "@/assets/themes/manga-17.jpg";
+import manga18 from "@/assets/themes/manga-18.jpg";
+import manga19 from "@/assets/themes/manga-19.jpg";
+import manga20 from "@/assets/themes/manga-20.jpg";
 // Nature
 import nature1 from "@/assets/themes/nature-1.jpg";
 import nature2 from "@/assets/themes/nature-2.jpg";
