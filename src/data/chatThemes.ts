@@ -63,6 +63,16 @@ import realistic7 from "@/assets/themes/realistic-7.jpg";
 import realistic8 from "@/assets/themes/realistic-8.jpg";
 import realistic9 from "@/assets/themes/realistic-9.jpg";
 import realistic10 from "@/assets/themes/realistic-10.jpg";
+import realistic11 from "@/assets/themes/realistic-11.jpg";
+import realistic12 from "@/assets/themes/realistic-12.jpg";
+import realistic13 from "@/assets/themes/realistic-13.jpg";
+import realistic14 from "@/assets/themes/realistic-14.jpg";
+import realistic15 from "@/assets/themes/realistic-15.jpg";
+import realistic16 from "@/assets/themes/realistic-16.jpg";
+import realistic17 from "@/assets/themes/realistic-17.jpg";
+import realistic18 from "@/assets/themes/realistic-18.jpg";
+import realistic19 from "@/assets/themes/realistic-19.jpg";
+import realistic20 from "@/assets/themes/realistic-20.jpg";
 
 export interface ChatTheme {
   id: number;
