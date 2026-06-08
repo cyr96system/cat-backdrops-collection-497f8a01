@@ -9,6 +9,16 @@ import manga7 from "@/assets/themes/manga-7.jpg";
 import manga8 from "@/assets/themes/manga-8.jpg";
 import manga9 from "@/assets/themes/manga-9.jpg";
 import manga10 from "@/assets/themes/manga-10.jpg";
+import manga11 from "@/assets/themes/manga-11.jpg";
+import manga12 from "@/assets/themes/manga-12.jpg";
+import manga13 from "@/assets/themes/manga-13.jpg";
+import manga14 from "@/assets/themes/manga-14.jpg";
+import manga15 from "@/assets/themes/manga-15.jpg";
+import manga16 from "@/assets/themes/manga-16.jpg";
+import manga17 from "@/assets/themes/manga-17.jpg";
+import manga18 from "@/assets/themes/manga-18.jpg";
+import manga19 from "@/assets/themes/manga-19.jpg";
+import manga20 from "@/assets/themes/manga-20.jpg";
 // Nature
 import nature1 from "@/assets/themes/nature-1.jpg";
 import nature2 from "@/assets/themes/nature-2.jpg";
@@ -53,6 +63,16 @@ import realistic7 from "@/assets/themes/realistic-7.jpg";
 import realistic8 from "@/assets/themes/realistic-8.jpg";
 import realistic9 from "@/assets/themes/realistic-9.jpg";
 import realistic10 from "@/assets/themes/realistic-10.jpg";
+import realistic11 from "@/assets/themes/realistic-11.jpg";
+import realistic12 from "@/assets/themes/realistic-12.jpg";
+import realistic13 from "@/assets/themes/realistic-13.jpg";
+import realistic14 from "@/assets/themes/realistic-14.jpg";
+import realistic15 from "@/assets/themes/realistic-15.jpg";
+import realistic16 from "@/assets/themes/realistic-16.jpg";
+import realistic17 from "@/assets/themes/realistic-17.jpg";
+import realistic18 from "@/assets/themes/realistic-18.jpg";
+import realistic19 from "@/assets/themes/realistic-19.jpg";
+import realistic20 from "@/assets/themes/realistic-20.jpg";
 
 export interface ChatTheme {
   id: number;
@@ -73,6 +93,16 @@ export const chatThemes: ChatTheme[] = [
   { id: 8, name: "Temple Enneigé", image: manga8, category: "Manga" },
   { id: 9, name: "Océan Corail", image: manga9, category: "Manga" },
   { id: 10, name: "Îles Flottantes", image: manga10, category: "Manga" },
+  { id: 61, name: "Aura Guerrier", image: manga11, category: "Manga" },
+  { id: 62, name: "Magical Girl", image: manga12, category: "Manga" },
+  { id: 63, name: "Mecha Tokyo", image: manga13, category: "Manga" },
+  { id: 64, name: "Collines Ghibli", image: manga14, category: "Manga" },
+  { id: 65, name: "Village Ninja", image: manga15, category: "Manga" },
+  { id: 66, name: "Cathédrale Sombre", image: manga16, category: "Manga" },
+  { id: 67, name: "Sakura Lycée", image: manga17, category: "Manga" },
+  { id: 68, name: "Royaume Marin", image: manga18, category: "Manga" },
+  { id: 69, name: "Phénix Légendaire", image: manga19, category: "Manga" },
+  { id: 70, name: "Festival Hiver", image: manga20, category: "Manga" },
 
   // Nature
   { id: 11, name: "Aurore Boréale", image: nature1, category: "Nature" },
@@ -121,6 +151,16 @@ export const chatThemes: ChatTheme[] = [
   { id: 48, name: "Cheval Océan", image: realistic8, category: "Réaliste" },
   { id: 49, name: "Café Vintage", image: realistic9, category: "Réaliste" },
   { id: 50, name: "Cappadoce", image: realistic10, category: "Réaliste" },
+  { id: 71, name: "Lac Brumeux", image: realistic11, category: "Réaliste" },
+  { id: 72, name: "Bibliothèque", image: realistic12, category: "Réaliste" },
+  { id: 73, name: "Chambre Océan", image: realistic13, category: "Réaliste" },
+  { id: 74, name: "Route Côtière", image: realistic14, category: "Réaliste" },
+  { id: 75, name: "Loup Neige", image: realistic15, category: "Réaliste" },
+  { id: 76, name: "Café Paris", image: realistic16, category: "Réaliste" },
+  { id: 77, name: "Playground", image: realistic17, category: "Réaliste" },
+  { id: 78, name: "Montgolfière Aube", image: realistic18, category: "Réaliste" },
+  { id: 79, name: "Violoniste Pont", image: realistic19, category: "Réaliste" },
+  { id: 80, name: "Cascade Jungle", image: realistic20, category: "Réaliste" },
 
   // Bonus - Using nature/country duplicates with different names for 51-60
   { id: 51, name: "Sakura & Lune", image: manga1, category: "Favoris" },
