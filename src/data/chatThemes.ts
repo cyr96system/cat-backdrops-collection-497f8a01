@@ -73,6 +73,12 @@ import realistic17 from "@/assets/themes/realistic-17.jpg";
 import realistic18 from "@/assets/themes/realistic-18.jpg";
 import realistic19 from "@/assets/themes/realistic-19.jpg";
 import realistic20 from "@/assets/themes/realistic-20.jpg";
+// Romance
+import romance1 from "@/assets/themes/romance-1.jpg";
+import romance2 from "@/assets/themes/romance-2.jpg";
+import romance3 from "@/assets/themes/romance-3.jpg";
+import romance4 from "@/assets/themes/romance-4.jpg";
+import romance5 from "@/assets/themes/romance-5.jpg";
 
 export interface ChatTheme {
   id: number;
@@ -162,6 +168,13 @@ export const chatThemes: ChatTheme[] = [
   { id: 79, name: "Violoniste Pont", image: realistic19, category: "Réaliste" },
   { id: 80, name: "Cascade Jungle", image: realistic20, category: "Réaliste" },
 
+  // Romance
+  { id: 81, name: "Dîner Parisien", image: romance1, category: "Romance" },
+  { id: 82, name: "Baiser Sakura", image: romance2, category: "Romance" },
+  { id: 83, name: "Plage Romantique", image: romance3, category: "Romance" },
+  { id: 84, name: "Chambre Pétales", image: romance4, category: "Romance" },
+  { id: 85, name: "Lettre d'Amour", image: romance5, category: "Romance" },
+
   // Bonus - Using nature/country duplicates with different names for 51-60
   { id: 51, name: "Sakura & Lune", image: manga1, category: "Favoris" },
   { id: 52, name: "Nuit Néon", image: manga2, category: "Favoris" },
@@ -175,4 +188,4 @@ export const chatThemes: ChatTheme[] = [
   { id: 60, name: "Montgolfières", image: realistic10, category: "Favoris" },
 ];
 
-export const themeCategories = ["Tous", "Manga", "Nature", "IA", "Pays", "Réaliste", "Favoris"];
+export const themeCategories = ["Tous", "Manga", "Nature", "IA", "Pays", "Réaliste", "Romance", "Favoris"];
