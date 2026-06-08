@@ -79,6 +79,17 @@ import romance2 from "@/assets/themes/romance-2.jpg";
 import romance3 from "@/assets/themes/romance-3.jpg";
 import romance4 from "@/assets/themes/romance-4.jpg";
 import romance5 from "@/assets/themes/romance-5.jpg";
+import romance6 from "@/assets/themes/romance-6.jpg";
+import romance7 from "@/assets/themes/romance-7.jpg";
+import romance8 from "@/assets/themes/romance-8.jpg";
+import romance9 from "@/assets/themes/romance-9.jpg";
+import romance10 from "@/assets/themes/romance-10.jpg";
+// Angélique
+import angelic1 from "@/assets/themes/angelic-1.jpg";
+import angelic2 from "@/assets/themes/angelic-2.jpg";
+import angelic3 from "@/assets/themes/angelic-3.jpg";
+import angelic4 from "@/assets/themes/angelic-4.jpg";
+import angelic5 from "@/assets/themes/angelic-5.jpg";
 
 export interface ChatTheme {
   id: number;
