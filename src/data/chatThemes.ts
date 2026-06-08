@@ -93,6 +93,16 @@ export const chatThemes: ChatTheme[] = [
   { id: 8, name: "Temple Enneigé", image: manga8, category: "Manga" },
   { id: 9, name: "Océan Corail", image: manga9, category: "Manga" },
   { id: 10, name: "Îles Flottantes", image: manga10, category: "Manga" },
+  { id: 61, name: "Aura Guerrier", image: manga11, category: "Manga" },
+  { id: 62, name: "Magical Girl", image: manga12, category: "Manga" },
+  { id: 63, name: "Mecha Tokyo", image: manga13, category: "Manga" },
+  { id: 64, name: "Collines Ghibli", image: manga14, category: "Manga" },
+  { id: 65, name: "Village Ninja", image: manga15, category: "Manga" },
+  { id: 66, name: "Cathédrale Sombre", image: manga16, category: "Manga" },
+  { id: 67, name: "Sakura Lycée", image: manga17, category: "Manga" },
+  { id: 68, name: "Royaume Marin", image: manga18, category: "Manga" },
+  { id: 69, name: "Phénix Légendaire", image: manga19, category: "Manga" },
+  { id: 70, name: "Festival Hiver", image: manga20, category: "Manga" },
 
   // Nature
   { id: 11, name: "Aurore Boréale", image: nature1, category: "Nature" },
