@@ -151,6 +151,16 @@ export const chatThemes: ChatTheme[] = [
   { id: 48, name: "Cheval Océan", image: realistic8, category: "Réaliste" },
   { id: 49, name: "Café Vintage", image: realistic9, category: "Réaliste" },
   { id: 50, name: "Cappadoce", image: realistic10, category: "Réaliste" },
+  { id: 71, name: "Lac Brumeux", image: realistic11, category: "Réaliste" },
+  { id: 72, name: "Bibliothèque", image: realistic12, category: "Réaliste" },
+  { id: 73, name: "Chambre Océan", image: realistic13, category: "Réaliste" },
+  { id: 74, name: "Route Côtière", image: realistic14, category: "Réaliste" },
+  { id: 75, name: "Loup Neige", image: realistic15, category: "Réaliste" },
+  { id: 76, name: "Café Paris", image: realistic16, category: "Réaliste" },
+  { id: 77, name: "Playground", image: realistic17, category: "Réaliste" },
+  { id: 78, name: "Montgolfière Aube", image: realistic18, category: "Réaliste" },
+  { id: 79, name: "Violoniste Pont", image: realistic19, category: "Réaliste" },
+  { id: 80, name: "Cascade Jungle", image: realistic20, category: "Réaliste" },
 
   // Bonus - Using nature/country duplicates with different names for 51-60
   { id: 51, name: "Sakura & Lune", image: manga1, category: "Favoris" },
