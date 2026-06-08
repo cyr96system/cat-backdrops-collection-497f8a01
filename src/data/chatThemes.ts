@@ -79,6 +79,17 @@ import romance2 from "@/assets/themes/romance-2.jpg";
 import romance3 from "@/assets/themes/romance-3.jpg";
 import romance4 from "@/assets/themes/romance-4.jpg";
 import romance5 from "@/assets/themes/romance-5.jpg";
+import romance6 from "@/assets/themes/romance-6.jpg";
+import romance7 from "@/assets/themes/romance-7.jpg";
+import romance8 from "@/assets/themes/romance-8.jpg";
+import romance9 from "@/assets/themes/romance-9.jpg";
+import romance10 from "@/assets/themes/romance-10.jpg";
+// Angélique
+import angelic1 from "@/assets/themes/angelic-1.jpg";
+import angelic2 from "@/assets/themes/angelic-2.jpg";
+import angelic3 from "@/assets/themes/angelic-3.jpg";
+import angelic4 from "@/assets/themes/angelic-4.jpg";
+import angelic5 from "@/assets/themes/angelic-5.jpg";
 
 export interface ChatTheme {
   id: number;
@@ -174,6 +185,19 @@ export const chatThemes: ChatTheme[] = [
   { id: 83, name: "Plage Romantique", image: romance3, category: "Romance" },
   { id: 84, name: "Chambre Pétales", image: romance4, category: "Romance" },
   { id: 85, name: "Lettre d'Amour", image: romance5, category: "Romance" },
+  { id: 86, name: "Danse sous la Pluie", image: romance6, category: "Romance" },
+  { id: 87, name: "Promenade Automne", image: romance7, category: "Romance" },
+  { id: 88, name: "Gondole Venise", image: romance8, category: "Romance" },
+  { id: 89, name: "Ballons Cœur", image: romance9, category: "Romance" },
+  { id: 90, name: "Nuit Étoilée", image: romance10, category: "Romance" },
+
+  // Angélique
+  { id: 91, name: "Ange Céleste", image: angelic1, category: "Angélique" },
+  { id: 92, name: "Portes du Paradis", image: angelic2, category: "Angélique" },
+  { id: 93, name: "Colombe Divine", image: angelic3, category: "Angélique" },
+  { id: 94, name: "Ailes de Lumière", image: angelic4, category: "Angélique" },
+  { id: 95, name: "Cathédrale Sacrée", image: angelic5, category: "Angélique" },
+
 
   // Bonus - Using nature/country duplicates with different names for 51-60
   { id: 51, name: "Sakura & Lune", image: manga1, category: "Favoris" },
@@ -188,4 +212,4 @@ export const chatThemes: ChatTheme[] = [
   { id: 60, name: "Montgolfières", image: realistic10, category: "Favoris" },
 ];
 
-export const themeCategories = ["Tous", "Manga", "Nature", "IA", "Pays", "Réaliste", "Romance", "Favoris"];
+export const themeCategories = ["Tous", "Manga", "Nature", "IA", "Pays", "Réaliste", "Romance", "Angélique", "Favoris"];
