@@ -19,6 +19,16 @@ import manga17 from "@/assets/themes/manga-17.jpg";
 import manga18 from "@/assets/themes/manga-18.jpg";
 import manga19 from "@/assets/themes/manga-19.jpg";
 import manga20 from "@/assets/themes/manga-20.jpg";
+import manga21 from "@/assets/themes/manga-21.jpg";
+import manga22 from "@/assets/themes/manga-22.jpg";
+import manga23 from "@/assets/themes/manga-23.jpg";
+import manga24 from "@/assets/themes/manga-24.jpg";
+import manga25 from "@/assets/themes/manga-25.jpg";
+import manga26 from "@/assets/themes/manga-26.jpg";
+import manga27 from "@/assets/themes/manga-27.jpg";
+import manga28 from "@/assets/themes/manga-28.jpg";
+import manga29 from "@/assets/themes/manga-29.jpg";
+import manga30 from "@/assets/themes/manga-30.jpg";
 // Nature
 import nature1 from "@/assets/themes/nature-1.jpg";
 import nature2 from "@/assets/themes/nature-2.jpg";
@@ -30,17 +40,6 @@ import nature7 from "@/assets/themes/nature-7.jpg";
 import nature8 from "@/assets/themes/nature-8.jpg";
 import nature9 from "@/assets/themes/nature-9.jpg";
 import nature10 from "@/assets/themes/nature-10.jpg";
-// AI
-import ai1 from "@/assets/themes/ai-1.jpg";
-import ai2 from "@/assets/themes/ai-2.jpg";
-import ai3 from "@/assets/themes/ai-3.jpg";
-import ai4 from "@/assets/themes/ai-4.jpg";
-import ai5 from "@/assets/themes/ai-5.jpg";
-import ai6 from "@/assets/themes/ai-6.jpg";
-import ai7 from "@/assets/themes/ai-7.jpg";
-import ai8 from "@/assets/themes/ai-8.jpg";
-import ai9 from "@/assets/themes/ai-9.jpg";
-import ai10 from "@/assets/themes/ai-10.jpg";
 // Countries
 import country1 from "@/assets/themes/country-1.jpg";
 import country2 from "@/assets/themes/country-2.jpg";
@@ -73,6 +72,16 @@ import realistic17 from "@/assets/themes/realistic-17.jpg";
 import realistic18 from "@/assets/themes/realistic-18.jpg";
 import realistic19 from "@/assets/themes/realistic-19.jpg";
 import realistic20 from "@/assets/themes/realistic-20.jpg";
+import realistic21 from "@/assets/themes/realistic-21.jpg";
+import realistic22 from "@/assets/themes/realistic-22.jpg";
+import realistic23 from "@/assets/themes/realistic-23.jpg";
+import realistic24 from "@/assets/themes/realistic-24.jpg";
+import realistic25 from "@/assets/themes/realistic-25.jpg";
+import realistic26 from "@/assets/themes/realistic-26.jpg";
+import realistic27 from "@/assets/themes/realistic-27.jpg";
+import realistic28 from "@/assets/themes/realistic-28.jpg";
+import realistic29 from "@/assets/themes/realistic-29.jpg";
+import realistic30 from "@/assets/themes/realistic-30.jpg";
 // Romance
 import romance1 from "@/assets/themes/romance-1.jpg";
 import romance2 from "@/assets/themes/romance-2.jpg";
@@ -84,12 +93,32 @@ import romance7 from "@/assets/themes/romance-7.jpg";
 import romance8 from "@/assets/themes/romance-8.jpg";
 import romance9 from "@/assets/themes/romance-9.jpg";
 import romance10 from "@/assets/themes/romance-10.jpg";
+import romance11 from "@/assets/themes/romance-11.jpg";
+import romance12 from "@/assets/themes/romance-12.jpg";
+import romance13 from "@/assets/themes/romance-13.jpg";
+import romance14 from "@/assets/themes/romance-14.jpg";
+import romance15 from "@/assets/themes/romance-15.jpg";
+import romance16 from "@/assets/themes/romance-16.jpg";
+import romance17 from "@/assets/themes/romance-17.jpg";
+import romance18 from "@/assets/themes/romance-18.jpg";
+import romance19 from "@/assets/themes/romance-19.jpg";
+import romance20 from "@/assets/themes/romance-20.jpg";
 // Angélique
 import angelic1 from "@/assets/themes/angelic-1.jpg";
 import angelic2 from "@/assets/themes/angelic-2.jpg";
 import angelic3 from "@/assets/themes/angelic-3.jpg";
 import angelic4 from "@/assets/themes/angelic-4.jpg";
 import angelic5 from "@/assets/themes/angelic-5.jpg";
+import angelic6 from "@/assets/themes/angelic-6.jpg";
+import angelic7 from "@/assets/themes/angelic-7.jpg";
+import angelic8 from "@/assets/themes/angelic-8.jpg";
+import angelic9 from "@/assets/themes/angelic-9.jpg";
+import angelic10 from "@/assets/themes/angelic-10.jpg";
+import angelic11 from "@/assets/themes/angelic-11.jpg";
+import angelic12 from "@/assets/themes/angelic-12.jpg";
+import angelic13 from "@/assets/themes/angelic-13.jpg";
+import angelic14 from "@/assets/themes/angelic-14.jpg";
+import angelic15 from "@/assets/themes/angelic-15.jpg";
 
 export interface ChatTheme {
   id: number;
@@ -120,6 +149,16 @@ export const chatThemes: ChatTheme[] = [
   { id: 68, name: "Royaume Marin", image: manga18, category: "Manga" },
   { id: 69, name: "Phénix Légendaire", image: manga19, category: "Manga" },
   { id: 70, name: "Festival Hiver", image: manga20, category: "Manga" },
+  { id: 101, name: "Samouraï Lune", image: manga21, category: "Manga" },
+  { id: 102, name: "Magical Étoiles", image: manga22, category: "Manga" },
+  { id: 103, name: "Cité Airships", image: manga23, category: "Manga" },
+  { id: 104, name: "Dragon Pagode", image: manga24, category: "Manga" },
+  { id: 105, name: "Jardin Koi", image: manga25, category: "Manga" },
+  { id: 106, name: "Rooftop Sakura", image: manga26, category: "Manga" },
+  { id: 107, name: "Kitsune", image: manga27, category: "Manga" },
+  { id: 108, name: "Onsen Nuit", image: manga28, category: "Manga" },
+  { id: 109, name: "Demon Slayer", image: manga29, category: "Manga" },
+  { id: 110, name: "Village Côtier", image: manga30, category: "Manga" },
 
   // Nature
   { id: 11, name: "Aurore Boréale", image: nature1, category: "Nature" },
@@ -132,18 +171,6 @@ export const chatThemes: ChatTheme[] = [
   { id: 18, name: "Forêt Neige", image: nature8, category: "Nature" },
   { id: 19, name: "Dunes Sahara", image: nature9, category: "Nature" },
   { id: 20, name: "Voie Lactée", image: nature10, category: "Nature" },
-
-  // IA / Futuriste
-  { id: 21, name: "Cyberpunk City", image: ai1, category: "IA" },
-  { id: 22, name: "Réseau Neural", image: ai2, category: "IA" },
-  { id: 23, name: "Surréalisme", image: ai3, category: "IA" },
-  { id: 24, name: "Robot IA", image: ai4, category: "IA" },
-  { id: 25, name: "Fractal Art", image: ai5, category: "IA" },
-  { id: 26, name: "Station Spatiale", image: ai6, category: "IA" },
-  { id: 27, name: "Synthwave 80s", image: ai7, category: "IA" },
-  { id: 28, name: "Code Matrix", image: ai8, category: "IA" },
-  { id: 29, name: "Chrome Liquide", image: ai9, category: "IA" },
-  { id: 30, name: "Méduses Abysses", image: ai10, category: "IA" },
 
   // Pays / Monuments
   { id: 31, name: "Paris Tour Eiffel", image: country1, category: "Pays" },
@@ -178,6 +205,16 @@ export const chatThemes: ChatTheme[] = [
   { id: 78, name: "Montgolfière Aube", image: realistic18, category: "Réaliste" },
   { id: 79, name: "Violoniste Pont", image: realistic19, category: "Réaliste" },
   { id: 80, name: "Cascade Jungle", image: realistic20, category: "Réaliste" },
+  { id: 111, name: "Pic Enneigé", image: realistic21, category: "Réaliste" },
+  { id: 112, name: "Moto Désert", image: realistic22, category: "Réaliste" },
+  { id: 113, name: "Cabane Neige", image: realistic23, category: "Réaliste" },
+  { id: 114, name: "Cuisine Marbre", image: realistic24, category: "Réaliste" },
+  { id: 115, name: "Surfer Vague", image: realistic25, category: "Réaliste" },
+  { id: 116, name: "Vignoble Toscan", image: realistic26, category: "Réaliste" },
+  { id: 117, name: "Chef Gastronomie", image: realistic27, category: "Réaliste" },
+  { id: 118, name: "Aigle Canyon", image: realistic28, category: "Réaliste" },
+  { id: 119, name: "Yacht Luxe", image: realistic29, category: "Réaliste" },
+  { id: 120, name: "Rue Sakura", image: realistic30, category: "Réaliste" },
 
   // Romance
   { id: 81, name: "Dîner Parisien", image: romance1, category: "Romance" },
@@ -190,6 +227,16 @@ export const chatThemes: ChatTheme[] = [
   { id: 88, name: "Gondole Venise", image: romance8, category: "Romance" },
   { id: 89, name: "Ballons Cœur", image: romance9, category: "Romance" },
   { id: 90, name: "Nuit Étoilée", image: romance10, category: "Romance" },
+  { id: 121, name: "Silhouette Sunset", image: romance11, category: "Romance" },
+  { id: 122, name: "Chandelles Roses", image: romance12, category: "Romance" },
+  { id: 123, name: "Baiser Guirlandes", image: romance13, category: "Romance" },
+  { id: 124, name: "Cafés Cœur", image: romance14, category: "Romance" },
+  { id: 125, name: "Tango Eiffel", image: romance15, category: "Romance" },
+  { id: 126, name: "Roses & Perles", image: romance16, category: "Romance" },
+  { id: 127, name: "Parapluie Pluie", image: romance17, category: "Romance" },
+  { id: 128, name: "Bague Pétales", image: romance18, category: "Romance" },
+  { id: 129, name: "Voie Lactée Duo", image: romance19, category: "Romance" },
+  { id: 130, name: "Carrosse Hiver", image: romance20, category: "Romance" },
 
   // Angélique
   { id: 91, name: "Ange Céleste", image: angelic1, category: "Angélique" },
@@ -197,19 +244,28 @@ export const chatThemes: ChatTheme[] = [
   { id: 93, name: "Colombe Divine", image: angelic3, category: "Angélique" },
   { id: 94, name: "Ailes de Lumière", image: angelic4, category: "Angélique" },
   { id: 95, name: "Cathédrale Sacrée", image: angelic5, category: "Angélique" },
+  { id: 131, name: "Ange Soleil", image: angelic6, category: "Angélique" },
+  { id: 132, name: "Auréole Plumes", image: angelic7, category: "Angélique" },
+  { id: 133, name: "Escalier Divin", image: angelic8, category: "Angélique" },
+  { id: 134, name: "Enfant Colombes", image: angelic9, category: "Angélique" },
+  { id: 135, name: "Croix Lumière", image: angelic10, category: "Angélique" },
+  { id: 136, name: "Ange Aurore", image: angelic11, category: "Angélique" },
+  { id: 137, name: "Vitraux Sacrés", image: angelic12, category: "Angélique" },
+  { id: 138, name: "Archange Guerrier", image: angelic13, category: "Angélique" },
+  { id: 139, name: "Harpe Céleste", image: angelic14, category: "Angélique" },
+  { id: 140, name: "Paradis Arc-en-ciel", image: angelic15, category: "Angélique" },
 
-
-  // Bonus - Using nature/country duplicates with different names for 51-60
+  // Favoris
   { id: 51, name: "Sakura & Lune", image: manga1, category: "Favoris" },
   { id: 52, name: "Nuit Néon", image: manga2, category: "Favoris" },
   { id: 53, name: "Plage Dorée", image: nature2, category: "Favoris" },
   { id: 54, name: "Automne Magique", image: nature7, category: "Favoris" },
   { id: 55, name: "Paris by Night", image: country1, category: "Favoris" },
-  { id: 56, name: "Synthwave Retro", image: ai7, category: "Favoris" },
+  { id: 56, name: "Ange Lumineux", image: angelic1, category: "Favoris" },
   { id: 57, name: "Étoiles Filantes", image: nature10, category: "Favoris" },
   { id: 58, name: "Safari Sunset", image: country9, category: "Favoris" },
-  { id: 59, name: "Jellyfish Glow", image: ai10, category: "Favoris" },
+  { id: 59, name: "Romance Pluie", image: romance17, category: "Favoris" },
   { id: 60, name: "Montgolfières", image: realistic10, category: "Favoris" },
 ];
 
-export const themeCategories = ["Tous", "Manga", "Nature", "IA", "Pays", "Réaliste", "Romance", "Angélique", "Favoris"];
+export const themeCategories = ["Tous", "Manga", "Nature", "Pays", "Réaliste", "Romance", "Angélique", "Favoris"];
