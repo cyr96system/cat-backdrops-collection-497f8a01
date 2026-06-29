@@ -360,4 +360,4 @@ export const chatThemes: ChatTheme[] = [
   { id: 60, name: "Montgolfières", image: realistic10, category: "Favoris" },
 ];
 
-export const themeCategories = ["Tous", "Manga", "Nature", "Pays", "Réaliste", "Romance", "Angélique", "Favoris"];
+export const themeCategories = ["Tous", "Manga", "Nature", "Pays", "Réaliste", "Romance", "Angélique", "Noël", "Nouvel An", "Pâques", "Fêtes Musulmanes", "Favoris"];
