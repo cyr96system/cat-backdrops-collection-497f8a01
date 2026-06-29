@@ -119,6 +119,50 @@ import angelic12 from "@/assets/themes/angelic-12.jpg";
 import angelic13 from "@/assets/themes/angelic-13.jpg";
 import angelic14 from "@/assets/themes/angelic-14.jpg";
 import angelic15 from "@/assets/themes/angelic-15.jpg";
+// Noël
+import christmas1 from "@/assets/themes/christmas-1.jpg";
+import christmas2 from "@/assets/themes/christmas-2.jpg";
+import christmas3 from "@/assets/themes/christmas-3.jpg";
+import christmas4 from "@/assets/themes/christmas-4.jpg";
+import christmas5 from "@/assets/themes/christmas-5.jpg";
+import christmas6 from "@/assets/themes/christmas-6.jpg";
+import christmas7 from "@/assets/themes/christmas-7.jpg";
+import christmas8 from "@/assets/themes/christmas-8.jpg";
+import christmas9 from "@/assets/themes/christmas-9.jpg";
+import christmas10 from "@/assets/themes/christmas-10.jpg";
+// Nouvel An
+import newyear1 from "@/assets/themes/newyear-1.jpg";
+import newyear2 from "@/assets/themes/newyear-2.jpg";
+import newyear3 from "@/assets/themes/newyear-3.jpg";
+import newyear4 from "@/assets/themes/newyear-4.jpg";
+import newyear5 from "@/assets/themes/newyear-5.jpg";
+import newyear6 from "@/assets/themes/newyear-6.jpg";
+import newyear7 from "@/assets/themes/newyear-7.jpg";
+import newyear8 from "@/assets/themes/newyear-8.jpg";
+import newyear9 from "@/assets/themes/newyear-9.jpg";
+import newyear10 from "@/assets/themes/newyear-10.jpg";
+// Pâques
+import easter1 from "@/assets/themes/easter-1.jpg";
+import easter2 from "@/assets/themes/easter-2.jpg";
+import easter3 from "@/assets/themes/easter-3.jpg";
+import easter4 from "@/assets/themes/easter-4.jpg";
+import easter5 from "@/assets/themes/easter-5.jpg";
+import easter6 from "@/assets/themes/easter-6.jpg";
+import easter7 from "@/assets/themes/easter-7.jpg";
+import easter8 from "@/assets/themes/easter-8.jpg";
+import easter9 from "@/assets/themes/easter-9.jpg";
+import easter10 from "@/assets/themes/easter-10.jpg";
+// Fêtes musulmanes
+import muslim1 from "@/assets/themes/muslim-1.jpg";
+import muslim2 from "@/assets/themes/muslim-2.jpg";
+import muslim3 from "@/assets/themes/muslim-3.jpg";
+import muslim4 from "@/assets/themes/muslim-4.jpg";
+import muslim5 from "@/assets/themes/muslim-5.jpg";
+import muslim6 from "@/assets/themes/muslim-6.jpg";
+import muslim7 from "@/assets/themes/muslim-7.jpg";
+import muslim8 from "@/assets/themes/muslim-8.jpg";
+import muslim9 from "@/assets/themes/muslim-9.jpg";
+import muslim10 from "@/assets/themes/muslim-10.jpg";
 
 export interface ChatTheme {
   id: number;
