@@ -299,6 +299,54 @@ export const chatThemes: ChatTheme[] = [
   { id: 139, name: "Harpe Céleste", image: angelic14, category: "Angélique" },
   { id: 140, name: "Paradis Arc-en-ciel", image: angelic15, category: "Angélique" },
 
+  // Noël
+  { id: 200, name: "Salon de Noël", image: christmas1, category: "Noël" },
+  { id: 201, name: "Père Noël Traîneau", image: christmas2, category: "Noël" },
+  { id: 202, name: "Village Enneigé", image: christmas3, category: "Noël" },
+  { id: 203, name: "Boules de Noël", image: christmas4, category: "Noël" },
+  { id: 204, name: "Cadeaux de Noël", image: christmas5, category: "Noël" },
+  { id: 205, name: "Maison en Pain d'Épices", image: christmas6, category: "Noël" },
+  { id: 206, name: "Crèche de Noël", image: christmas7, category: "Noël" },
+  { id: 207, name: "Bonhomme de Neige", image: christmas8, category: "Noël" },
+  { id: 208, name: "Marché de Noël", image: christmas9, category: "Noël" },
+  { id: 209, name: "Couronne de Noël", image: christmas10, category: "Noël" },
+
+  // Nouvel An
+  { id: 210, name: "Feux d'Artifice Ville", image: newyear1, category: "Nouvel An" },
+  { id: 211, name: "Champagne d'Or", image: newyear2, category: "Nouvel An" },
+  { id: 212, name: "Times Square", image: newyear3, category: "Nouvel An" },
+  { id: 213, name: "Eiffel Nouvel An", image: newyear4, category: "Nouvel An" },
+  { id: 214, name: "Minuit Sonnant", image: newyear5, category: "Nouvel An" },
+  { id: 215, name: "Happy New Year", image: newyear6, category: "Nouvel An" },
+  { id: 216, name: "Sydney Bridge", image: newyear7, category: "Nouvel An" },
+  { id: 217, name: "Cierges Magiques", image: newyear8, category: "Nouvel An" },
+  { id: 218, name: "Table Festive", image: newyear9, category: "Nouvel An" },
+  { id: 219, name: "Dubai Burj", image: newyear10, category: "Nouvel An" },
+
+  // Pâques
+  { id: 220, name: "Panier de Pâques", image: easter1, category: "Pâques" },
+  { id: 221, name: "Lapin de Pâques", image: easter2, category: "Pâques" },
+  { id: 222, name: "Œufs Colorés", image: easter3, category: "Pâques" },
+  { id: 223, name: "Résurrection", image: easter4, category: "Pâques" },
+  { id: 224, name: "Pastel Pâques", image: easter5, category: "Pâques" },
+  { id: 225, name: "Croix & Lys", image: easter6, category: "Pâques" },
+  { id: 226, name: "Chasse aux Œufs", image: easter7, category: "Pâques" },
+  { id: 227, name: "Arbre de Pâques", image: easter8, category: "Pâques" },
+  { id: 228, name: "Brunch de Pâques", image: easter9, category: "Pâques" },
+  { id: 229, name: "Lys & Colombe", image: easter10, category: "Pâques" },
+
+  // Fêtes musulmanes
+  { id: 230, name: "Eid Mubarak", image: muslim1, category: "Fêtes Musulmanes" },
+  { id: 231, name: "Mosquée Crépuscule", image: muslim2, category: "Fêtes Musulmanes" },
+  { id: 232, name: "Lanternes Ramadan", image: muslim3, category: "Fêtes Musulmanes" },
+  { id: 233, name: "Table Eid", image: muslim4, category: "Fêtes Musulmanes" },
+  { id: 234, name: "Intérieur Mosquée", image: muslim5, category: "Fêtes Musulmanes" },
+  { id: 235, name: "Famille Eid", image: muslim6, category: "Fêtes Musulmanes" },
+  { id: 236, name: "Kaaba La Mecque", image: muslim7, category: "Fêtes Musulmanes" },
+  { id: 237, name: "Iftar Coucher", image: muslim8, category: "Fêtes Musulmanes" },
+  { id: 238, name: "Croissant & Étoiles", image: muslim9, category: "Fêtes Musulmanes" },
+  { id: 239, name: "Calligraphie Or", image: muslim10, category: "Fêtes Musulmanes" },
+
   // Favoris
   { id: 51, name: "Sakura & Lune", image: manga1, category: "Favoris" },
   { id: 52, name: "Nuit Néon", image: manga2, category: "Favoris" },
