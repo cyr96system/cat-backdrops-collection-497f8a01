@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useThemePalette } from "@/hooks/use-theme-palette";
 
 interface ChatPreviewProps {
   backgroundImage: string;
@@ -12,6 +13,8 @@ const messages = [
 ];
 
 const ChatPreview = ({ backgroundImage }: ChatPreviewProps) => {
+  const palette = useThemePalette(backgroundImage);
+
   return (
     <motion.div
       layout
@@ -20,7 +23,10 @@ const ChatPreview = ({ backgroundImage }: ChatPreviewProps) => {
     >
       {/* Header */}
       <div className="bg-card px-4 py-3 flex items-center gap-3 border-b border-border">
-        <div className="w-9 h-9 rounded-full bg-primary/20 flex items-center justify-center text-sm font-bold text-primary">
+        <div
+          className="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold text-white transition-colors duration-500"
+          style={{ backgroundColor: palette.accent }}
+        >
           A
         </div>
         <div>
@@ -39,7 +45,10 @@ const ChatPreview = ({ backgroundImage }: ChatPreviewProps) => {
           alt=""
           className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500"
         />
-        <div className="absolute inset-0 bg-black/10" />
+        <div
+          className="absolute inset-0 transition-colors duration-500"
+          style={{ backgroundColor: palette.overlay }}
+        />
         <div className="relative z-10 flex flex-col gap-2">
           {messages.map((msg, i) => (
             <motion.div
@@ -50,11 +59,14 @@ const ChatPreview = ({ backgroundImage }: ChatPreviewProps) => {
               className={`flex ${msg.sent ? "justify-end" : "justify-start"}`}
             >
               <div
-                className={`max-w-[75%] px-3 py-2 rounded-2xl text-xs shadow-md ${
-                  msg.sent
-                    ? "bg-primary text-primary-foreground rounded-br-md"
-                    : "bg-card/90 text-card-foreground rounded-bl-md backdrop-blur-sm"
+                className={`max-w-[75%] px-3 py-2 rounded-2xl text-xs shadow-md border backdrop-blur-sm transition-colors duration-500 ${
+                  msg.sent ? "rounded-br-md" : "rounded-bl-md"
                 }`}
+                style={{
+                  backgroundColor: msg.sent ? palette.sentBg : palette.recvBg,
+                  color: msg.sent ? palette.sentText : palette.recvText,
+                  borderColor: palette.border,
+                }}
               >
                 {msg.text}
               </div>
@@ -68,8 +80,11 @@ const ChatPreview = ({ backgroundImage }: ChatPreviewProps) => {
         <div className="flex-1 bg-muted rounded-full px-3 py-1.5 text-xs text-muted-foreground">
           Message...
         </div>
-        <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary-foreground">
+        <div
+          className="w-7 h-7 rounded-full flex items-center justify-center transition-colors duration-500"
+          style={{ backgroundColor: palette.accent }}
+        >
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-white">
             <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
           </svg>
         </div>

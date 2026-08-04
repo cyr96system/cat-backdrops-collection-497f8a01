@@ -5,6 +5,7 @@ import { boyStickers, girlStickers, teenBoyStickers, teenGirlStickers, manSticke
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
+import { useThemePalette } from "@/hooks/use-theme-palette";
 
 type StickerCharacter = "boy" | "girl" | "teen-boy" | "teen-girl" | "man" | "woman" | "mystery-man";
 
@@ -21,7 +22,12 @@ const initial: ChatMessage[] = [
   { id: 2, sent: true, type: "text", text: "OK j'envoie !" },
 ];
 
-const ChatStickerDemo = () => {
+interface ChatStickerDemoProps {
+  backgroundImage?: string;
+}
+
+const ChatStickerDemo = ({ backgroundImage }: ChatStickerDemoProps) => {
+  const palette = useThemePalette(backgroundImage);
   const [messages, setMessages] = useState<ChatMessage[]>(initial);
   const [input, setInput] = useState("");
   const [character, setCharacter] = useState<StickerCharacter>("boy");
@@ -72,8 +78,21 @@ const ChatStickerDemo = () => {
           </div>
         </div>
 
-        <div ref={scrollRef} className="h-96 overflow-y-auto bg-muted/30 px-3 py-4">
-          <div className="flex flex-col gap-2">
+        <div ref={scrollRef} className="relative h-96 overflow-y-auto bg-muted/30 px-3 py-4">
+          {backgroundImage && (
+            <>
+              <img
+                src={backgroundImage}
+                alt=""
+                className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+              />
+              <div
+                className="pointer-events-none absolute inset-0 transition-colors duration-500"
+                style={{ backgroundColor: palette.overlay }}
+              />
+            </>
+          )}
+          <div className="relative z-10 flex flex-col gap-2">
             <AnimatePresence initial={false}>
               {messages.map((msg) => (
                 <motion.div
@@ -84,11 +103,14 @@ const ChatStickerDemo = () => {
                 >
                   {msg.type === "text" ? (
                     <div
-                      className={`max-w-[75%] rounded-2xl px-3 py-2 text-sm shadow-md ${
-                        msg.sent
-                          ? "rounded-br-md bg-primary text-primary-foreground"
-                          : "rounded-bl-md bg-card text-card-foreground"
+                      className={`max-w-[75%] rounded-2xl border px-3 py-2 text-sm shadow-md backdrop-blur-sm transition-colors duration-500 ${
+                        msg.sent ? "rounded-br-md" : "rounded-bl-md"
                       }`}
+                      style={{
+                        backgroundColor: msg.sent ? palette.sentBg : palette.recvBg,
+                        color: msg.sent ? palette.sentText : palette.recvText,
+                        borderColor: palette.border,
+                      }}
                     >
                       {msg.text}
                     </div>
