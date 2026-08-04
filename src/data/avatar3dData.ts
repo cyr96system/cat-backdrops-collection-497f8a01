@@ -84,6 +84,15 @@ import developerWoman from "@/assets/avatars-3d/developer-woman.jpg";
 import entrepreneurMan from "@/assets/avatars-3d/entrepreneur-man.jpg";
 import entrepreneurWoman from "@/assets/avatars-3d/entrepreneur-woman.jpg";
 
+import x3d11 from "@/assets/avatars-3d/extra-11.jpg";
+import x3d12 from "@/assets/avatars-3d/extra-12.jpg";
+import x3d13 from "@/assets/avatars-3d/extra-13.jpg";
+import x3d14 from "@/assets/avatars-3d/extra-14.jpg";
+import x3d15 from "@/assets/avatars-3d/extra-15.jpg";
+import x3d16 from "@/assets/avatars-3d/extra-16.jpg";
+import x3d17 from "@/assets/avatars-3d/extra-17.jpg";
+import x3d18 from "@/assets/avatars-3d/extra-18.jpg";
+
 import type { AvatarOption } from "./avatarData";
 
 export const avatar3dOptions: AvatarOption[] = [
@@ -171,4 +180,12 @@ export const avatar3dOptions: AvatarOption[] = [
   { id: 177, name: "Développeuse", image: developerWoman, category: "Pro" },
   { id: 178, name: "Entrepreneur", image: entrepreneurMan, category: "Pro" },
   { id: 179, name: "Entrepreneuse", image: entrepreneurWoman, category: "Pro" },
+  { id: 180, name: "Professeur", image: x3d11, category: "Pro" },
+  { id: 181, name: "Infirmière", image: x3d12, category: "Pro" },
+  { id: 182, name: "Barista", image: x3d13, category: "Pro" },
+  { id: 183, name: "Photographe", image: x3d14, category: "Pro" },
+  { id: 184, name: "Athlète", image: x3d15, category: "Homme" },
+  { id: 185, name: "Peintre", image: x3d16, category: "Femme" },
+  { id: 186, name: "Petit Inventeur", image: x3d17, category: "Enfant" },
+  { id: 187, name: "Petite Astronaute", image: x3d18, category: "Enfant" },
 ];
