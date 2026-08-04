@@ -67,7 +67,7 @@ const Index = () => {
         <div className="border-t border-border" />
 
         {/* Chat demo with stickers */}
-        <ChatStickerDemo />
+        <ChatStickerDemo backgroundImage={selected.image} />
       </div>
     </div>
   );
