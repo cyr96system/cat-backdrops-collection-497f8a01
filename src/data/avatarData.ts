@@ -156,6 +156,14 @@ export const avatarOptions: AvatarOption[] = [
   { id: 68, name: "Archère Elfe", image: extra8, category: "Femme" },
   { id: 69, name: "Bébé Sourire", image: baby1, category: "Bébé" },
   { id: 70, name: "Bébé Ribbon", image: baby2, category: "Bébé" },
+  { id: 71, name: "Guerrier Argent", image: extra9, category: "Homme" },
+  { id: 72, name: "Idole Pop", image: extra10, category: "Femme" },
+  { id: 73, name: "Samouraï", image: extra11, category: "Femme" },
+  { id: 74, name: "Lycéen", image: extra12, category: "Homme" },
+  { id: 75, name: "Petit Mage", image: extra13, category: "Enfant" },
+  { id: 76, name: "Docteure", image: extra14, category: "Pro" },
+  { id: 77, name: "Motard", image: extra15, category: "Homme" },
+  { id: 78, name: "Danseuse", image: extra16, category: "Femme" },
 ];
 
 export const avatarCategories = ["Tous", "Homme", "Femme", "Enfant", "Bébé", "Pro"] as const;
