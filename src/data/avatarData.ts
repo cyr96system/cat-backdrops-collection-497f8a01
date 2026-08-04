@@ -70,6 +70,14 @@ import extra5 from "@/assets/avatars/extra-5.jpg";
 import extra6 from "@/assets/avatars/extra-6.jpg";
 import extra7 from "@/assets/avatars/extra-7.jpg";
 import extra8 from "@/assets/avatars/extra-8.jpg";
+import extra9 from "@/assets/avatars/extra-9.jpg";
+import extra10 from "@/assets/avatars/extra-10.jpg";
+import extra11 from "@/assets/avatars/extra-11.jpg";
+import extra12 from "@/assets/avatars/extra-12.jpg";
+import extra13 from "@/assets/avatars/extra-13.jpg";
+import extra14 from "@/assets/avatars/extra-14.jpg";
+import extra15 from "@/assets/avatars/extra-15.jpg";
+import extra16 from "@/assets/avatars/extra-16.jpg";
 // Babies
 import baby1 from "@/assets/avatars/baby-1.jpg";
 import baby2 from "@/assets/avatars/baby-2.jpg";
