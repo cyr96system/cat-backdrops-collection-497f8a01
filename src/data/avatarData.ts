@@ -78,6 +78,15 @@ import extra13 from "@/assets/avatars/extra-13.jpg";
 import extra14 from "@/assets/avatars/extra-14.jpg";
 import extra15 from "@/assets/avatars/extra-15.jpg";
 import extra16 from "@/assets/avatars/extra-16.jpg";
+// Pro Manga
+import pro1 from "@/assets/avatars/pro-1.jpg";
+import pro2 from "@/assets/avatars/pro-2.jpg";
+import pro3 from "@/assets/avatars/pro-3.jpg";
+import pro4 from "@/assets/avatars/pro-4.jpg";
+import pro5 from "@/assets/avatars/pro-5.jpg";
+import pro6 from "@/assets/avatars/pro-6.jpg";
+import pro7 from "@/assets/avatars/pro-7.jpg";
+import pro8 from "@/assets/avatars/pro-8.jpg";
 // Babies
 import baby1 from "@/assets/avatars/baby-1.jpg";
 import baby2 from "@/assets/avatars/baby-2.jpg";
@@ -172,6 +181,15 @@ export const avatarOptions: AvatarOption[] = [
   { id: 76, name: "Docteure", image: extra14, category: "Pro" },
   { id: 77, name: "Motard", image: extra15, category: "Homme" },
   { id: 78, name: "Danseuse", image: extra16, category: "Femme" },
+  // Pros Manga
+  { id: 79, name: "CEO", image: pro1, category: "Pro" },
+  { id: 80, name: "Avocate", image: pro2, category: "Pro" },
+  { id: 81, name: "Médecin", image: pro3, category: "Pro" },
+  { id: 82, name: "Architecte", image: pro4, category: "Pro" },
+  { id: 83, name: "Ingénieur", image: pro5, category: "Pro" },
+  { id: 84, name: "Designer", image: pro6, category: "Pro" },
+  { id: 85, name: "Chef", image: pro7, category: "Pro" },
+  { id: 86, name: "Infirmière", image: pro8, category: "Pro" },
 ];
 
 export const avatarCategories = ["Tous", "Homme", "Femme", "Enfant", "Bébé", "Pro"] as const;
