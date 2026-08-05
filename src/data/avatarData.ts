@@ -87,6 +87,8 @@ import pro5 from "@/assets/avatars/pro-5.jpg";
 import pro6 from "@/assets/avatars/pro-6.jpg";
 import pro7 from "@/assets/avatars/pro-7.jpg";
 import pro8 from "@/assets/avatars/pro-8.jpg";
+import pro9 from "@/assets/avatars/pro-9.jpg";
+import pro10 from "@/assets/avatars/pro-10.jpg";
 // Babies
 import baby1 from "@/assets/avatars/baby-1.jpg";
 import baby2 from "@/assets/avatars/baby-2.jpg";
@@ -190,6 +192,8 @@ export const avatarOptions: AvatarOption[] = [
   { id: 84, name: "Designer", image: pro6, category: "Pro" },
   { id: 85, name: "Chef", image: pro7, category: "Pro" },
   { id: 86, name: "Infirmière", image: pro8, category: "Pro" },
+  { id: 87, name: "Pilote", image: pro9, category: "Pro" },
+  { id: 88, name: "Pompier", image: pro10, category: "Pro" },
 ];
 
 export const avatarCategories = ["Tous", "Homme", "Femme", "Enfant", "Bébé", "Pro"] as const;

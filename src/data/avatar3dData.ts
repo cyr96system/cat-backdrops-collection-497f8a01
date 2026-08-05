@@ -92,6 +92,7 @@ import x3d15 from "@/assets/avatars-3d/extra-15.jpg";
 import x3d16 from "@/assets/avatars-3d/extra-16.jpg";
 import x3d17 from "@/assets/avatars-3d/extra-17.jpg";
 import x3d18 from "@/assets/avatars-3d/extra-18.jpg";
+import x3d19 from "@/assets/avatars-3d/extra-19.jpg";
 
 import type { AvatarOption } from "./avatarData";
 
@@ -188,4 +189,5 @@ export const avatar3dOptions: AvatarOption[] = [
   { id: 185, name: "Peintre", image: x3d16, category: "Femme" },
   { id: 186, name: "Petit Inventeur", image: x3d17, category: "Enfant" },
   { id: 187, name: "Petite Astronaute", image: x3d18, category: "Enfant" },
+  { id: 188, name: "Scientifique", image: x3d19, category: "Pro" },
 ];
