@@ -92,6 +92,28 @@ import pro10 from "@/assets/avatars/pro-10.jpg";
 // Babies
 import baby1 from "@/assets/avatars/baby-1.jpg";
 import baby2 from "@/assets/avatars/baby-2.jpg";
+// New men
+import man21 from "@/assets/avatars/man-21.jpg";
+import man22 from "@/assets/avatars/man-22.jpg";
+import man23 from "@/assets/avatars/man-23.jpg";
+import man24 from "@/assets/avatars/man-24.jpg";
+import man25 from "@/assets/avatars/man-25.jpg";
+import man26 from "@/assets/avatars/man-26.jpg";
+import man27 from "@/assets/avatars/man-27.jpg";
+import man28 from "@/assets/avatars/man-28.jpg";
+import man29 from "@/assets/avatars/man-29.jpg";
+import man30 from "@/assets/avatars/man-30.jpg";
+// New women
+import woman21 from "@/assets/avatars/woman-21.jpg";
+import woman22 from "@/assets/avatars/woman-22.jpg";
+import woman23 from "@/assets/avatars/woman-23.jpg";
+import woman24 from "@/assets/avatars/woman-24.jpg";
+import woman25 from "@/assets/avatars/woman-25.jpg";
+import woman26 from "@/assets/avatars/woman-26.jpg";
+import woman27 from "@/assets/avatars/woman-27.jpg";
+import woman28 from "@/assets/avatars/woman-28.jpg";
+import woman29 from "@/assets/avatars/woman-29.jpg";
+import woman30 from "@/assets/avatars/woman-30.jpg";
 
 export interface AvatarOption {
   id: number;
@@ -194,6 +216,28 @@ export const avatarOptions: AvatarOption[] = [
   { id: 86, name: "Infirmière", image: pro8, category: "Pro" },
   { id: 87, name: "Pilote", image: pro9, category: "Pro" },
   { id: 88, name: "Pompier", image: pro10, category: "Pro" },
+  // New Manga Hommes
+  { id: 89, name: "Ryu", image: man21, category: "Homme" },
+  { id: 90, name: "Kaito", image: man22, category: "Homme" },
+  { id: 91, name: "Haru", image: man23, category: "Homme" },
+  { id: 92, name: "Shinji", image: man24, category: "Homme" },
+  { id: 93, name: "Tatsuya", image: man25, category: "Homme" },
+  { id: 94, name: "Kenji", image: man26, category: "Homme" },
+  { id: 95, name: "Daiki", image: man27, category: "Homme" },
+  { id: 96, name: "Yuki", image: man28, category: "Homme" },
+  { id: 97, name: "Sora", image: man29, category: "Homme" },
+  { id: 98, name: "Ren", image: man30, category: "Homme" },
+  // New Manga Femmes
+  { id: 99, name: "Hana", image: woman21, category: "Femme" },
+  { id: 100, name: "Mei", image: woman22, category: "Femme" },
+  { id: 101, name: "Yuna", image: woman23, category: "Femme" },
+  { id: 102, name: "Aiko", image: woman24, category: "Femme" },
+  { id: 103, name: "Rei", image: woman25, category: "Femme" },
+  { id: 104, name: "Mika", image: woman26, category: "Femme" },
+  { id: 105, name: "Nana", image: woman27, category: "Femme" },
+  { id: 106, name: "Rin", image: woman28, category: "Femme" },
+  { id: 107, name: "Saki", image: woman29, category: "Femme" },
+  { id: 108, name: "Emi", image: woman30, category: "Femme" },
 ];
 
 export const avatarCategories = ["Tous", "Homme", "Femme", "Enfant", "Bébé", "Pro"] as const;
