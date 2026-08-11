@@ -70,8 +70,15 @@ const Index = () => {
 
         {/* Chat demo with stickers */}
         <ChatStickerDemo backgroundImage={selected.image} />
+
+        {/* Separator */}
+        <div className="border-t border-border" />
+
+        {/* Illustrations Social fun */}
+        <IllustrationGallery />
       </div>
     </div>
+
   );
 };
 
