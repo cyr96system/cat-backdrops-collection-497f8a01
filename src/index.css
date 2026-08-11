@@ -96,7 +96,18 @@ All colors MUST be HSL.
     --chat-bubble-received: 230 15% 18%;
     --chat-bubble-received-foreground: 220 15% 90%;
   }
+  }
+
+  /* Couleurs des illustrations Social fun (surchargeables à tout moment) */
+  :root,
+  .dark {
+    --illu-1: hsl(var(--primary));
+    --illu-2: hsl(var(--accent));
+    --illu-3: hsl(var(--muted));
+    --illu-4: hsl(var(--foreground));
+  }
 }
+
 
 @layer base {
   * {
