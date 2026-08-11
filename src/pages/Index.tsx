@@ -6,6 +6,8 @@ import ProfileSection from "@/components/ProfileSection";
 import ThemeToggle from "@/components/ThemeToggle";
 import StickerPicker from "@/components/StickerPicker";
 import ChatStickerDemo from "@/components/ChatStickerDemo";
+import IllustrationGallery from "@/components/IllustrationGallery";
+
 
 const Index = () => {
   const [selected, setSelected] = useState(chatThemes[0]);
@@ -68,8 +70,15 @@ const Index = () => {
 
         {/* Chat demo with stickers */}
         <ChatStickerDemo backgroundImage={selected.image} />
+
+        {/* Separator */}
+        <div className="border-t border-border" />
+
+        {/* Illustrations Social fun */}
+        <IllustrationGallery />
       </div>
     </div>
+
   );
 };
 
