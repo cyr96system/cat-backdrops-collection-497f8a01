@@ -13,25 +13,12 @@ export interface IllustrationProps extends Omit<SVGProps<SVGSVGElement>, "childr
   className?: string;
 }
 
-const baseStyle: CSSProperties = {
-  ["--illu-1" as string]: "hsl(var(--primary))",
-  ["--illu-2" as string]: "hsl(var(--accent))",
-  ["--illu-3" as string]: "hsl(var(--muted))",
-  ["--illu-4" as string]: "hsl(var(--foreground))",
-};
-
-const Svg = ({ children, className, style, ...rest }: IllustrationProps & { children: ReactNode }) => (
-  <svg
-    viewBox="0 0 240 200"
-    fill="none"
-    role="img"
-    className={className}
-    style={{ ...baseStyle, ...style }}
-    {...rest}
-  >
+const Svg = ({ children, className, ...rest }: IllustrationProps & { children: ReactNode }) => (
+  <svg viewBox="0 0 240 200" fill="none" role="img" className={className} {...rest}>
     {children}
   </svg>
 );
+
 
 const C1 = "var(--illu-1)";
 const C2 = "var(--illu-2)";
