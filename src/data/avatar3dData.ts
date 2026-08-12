@@ -1,3 +1,13 @@
+import ic1 from "@/assets/avatars-3d/icon-1.jpg";
+import ic2 from "@/assets/avatars-3d/icon-2.jpg";
+import ic3 from "@/assets/avatars-3d/icon-3.jpg";
+import ic4 from "@/assets/avatars-3d/icon-4.jpg";
+import ic5 from "@/assets/avatars-3d/icon-5.jpg";
+import ic6 from "@/assets/avatars-3d/icon-6.jpg";
+import ic7 from "@/assets/avatars-3d/icon-7.jpg";
+import ic8 from "@/assets/avatars-3d/icon-8.jpg";
+import ic9 from "@/assets/avatars-3d/icon-9.jpg";
+import ic10 from "@/assets/avatars-3d/icon-10.jpg";
 // 3D Men
 import man1 from "@/assets/avatars-3d/man-1.jpg";
 import man2 from "@/assets/avatars-3d/man-2.jpg";
@@ -190,4 +200,15 @@ export const avatar3dOptions: AvatarOption[] = [
   { id: 186, name: "Petit Inventeur", image: x3d17, category: "Enfant" },
   { id: 187, name: "Petite Astronaute", image: x3d18, category: "Enfant" },
   { id: 188, name: "Scientifique", image: x3d19, category: "Pro" },
+  // Icônes 3D
+  { id: 189, name: "Léo", image: ic1, category: "Homme" },
+  { id: 190, name: "Nina", image: ic2, category: "Femme" },
+  { id: 191, name: "Marc", image: ic3, category: "Homme" },
+  { id: 192, name: "Amina", image: ic4, category: "Femme" },
+  { id: 193, name: "Gamer Max", image: ic5, category: "Homme" },
+  { id: 194, name: "Clara", image: ic6, category: "Femme" },
+  { id: 195, name: "Kenta", image: ic7, category: "Homme" },
+  { id: 196, name: "Eva", image: ic8, category: "Femme" },
+  { id: 197, name: "Tony", image: ic9, category: "Homme" },
+  { id: 198, name: "Lia", image: ic10, category: "Femme" },
 ];

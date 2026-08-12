@@ -5,6 +5,16 @@ import {
   illustrationPalettes,
   IllustrationFrame,
 } from "@/components/illustrations/SocialIllustrations";
+import manga1 from "@/assets/illustrations/manga-1.jpg";
+import manga2 from "@/assets/illustrations/manga-2.jpg";
+import manga3 from "@/assets/illustrations/manga-3.jpg";
+
+const mangaIllustrations = [
+  { src: manga1, title: "Selfie au coucher du soleil", desc: "Entre amis sur les toits" },
+  { src: manga2, title: "Discussion cosy", desc: "Messages et cœurs qui flottent" },
+  { src: manga3, title: "Explosion de joie", desc: "Likes et confettis" },
+];
+
 
 const IllustrationGallery = () => {
   const [paletteIndex, setPaletteIndex] = useState(0);
@@ -60,8 +70,39 @@ const IllustrationGallery = () => {
           </motion.div>
         ))}
       </IllustrationFrame>
+
+      <div className="space-y-4">
+        <h3 className="text-center text-2xl font-bold tracking-tight text-foreground">Illustrations Manga</h3>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+          {mangaIllustrations.map((m) => (
+            <motion.figure
+              key={m.title}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -4 }}
+              transition={{ duration: 0.25 }}
+              className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
+            >
+              <img
+                src={m.src}
+                alt={m.title}
+                loading="lazy"
+                width={1024}
+                height={640}
+                className="aspect-[16/10] w-full object-cover"
+              />
+              <figcaption className="space-y-1 p-4">
+                <p className="text-sm font-semibold text-card-foreground">{m.title}</p>
+                <p className="text-xs text-muted-foreground">{m.desc}</p>
+              </figcaption>
+            </motion.figure>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
+
 
 export default IllustrationGallery;
