@@ -1,3 +1,13 @@
+import mi1 from "@/assets/avatars/manga-icon-1.jpg";
+import mi2 from "@/assets/avatars/manga-icon-2.jpg";
+import mi3 from "@/assets/avatars/manga-icon-3.jpg";
+import mi4 from "@/assets/avatars/manga-icon-4.jpg";
+import mi5 from "@/assets/avatars/manga-icon-5.jpg";
+import mi6 from "@/assets/avatars/manga-icon-6.jpg";
+import mi7 from "@/assets/avatars/manga-icon-7.jpg";
+import mi8 from "@/assets/avatars/manga-icon-8.jpg";
+import mi9 from "@/assets/avatars/manga-icon-9.jpg";
+import mi10 from "@/assets/avatars/manga-icon-10.jpg";
 // Men
 import man1 from "@/assets/avatars/man-1.jpg";
 import man2 from "@/assets/avatars/man-2.jpg";
@@ -238,6 +248,17 @@ export const avatarOptions: AvatarOption[] = [
   { id: 106, name: "Rin", image: woman28, category: "Femme" },
   { id: 107, name: "Saki", image: woman29, category: "Femme" },
   { id: 108, name: "Emi", image: woman30, category: "Femme" },
+  // Icônes Manga (cyberpunk / webtoon)
+  { id: 109, name: "Neo", image: mi1, category: "Homme" },
+  { id: 110, name: "Aya", image: mi2, category: "Femme" },
+  { id: 111, name: "Jin", image: mi3, category: "Homme" },
+  { id: 112, name: "Seo-yeon", image: mi4, category: "Femme" },
+  { id: 113, name: "Kage", image: mi5, category: "Homme" },
+  { id: 114, name: "Luna", image: mi6, category: "Femme" },
+  { id: 115, name: "Sakura-kun", image: mi7, category: "Homme" },
+  { id: 116, name: "Hoshi", image: mi8, category: "Femme" },
+  { id: 117, name: "Riku", image: mi9, category: "Homme" },
+  { id: 118, name: "Miku", image: mi10, category: "Femme" },
 ];
 
 export const avatarCategories = ["Tous", "Homme", "Femme", "Enfant", "Bébé", "Pro"] as const;
