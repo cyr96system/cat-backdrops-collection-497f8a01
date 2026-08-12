@@ -5,6 +5,16 @@ import {
   illustrationPalettes,
   IllustrationFrame,
 } from "@/components/illustrations/SocialIllustrations";
+import manga1 from "@/assets/illustrations/manga-1.jpg";
+import manga2 from "@/assets/illustrations/manga-2.jpg";
+import manga3 from "@/assets/illustrations/manga-3.jpg";
+
+const mangaIllustrations = [
+  { src: manga1, title: "Selfie au coucher du soleil", desc: "Entre amis sur les toits" },
+  { src: manga2, title: "Discussion cosy", desc: "Messages et cœurs qui flottent" },
+  { src: manga3, title: "Explosion de joie", desc: "Likes et confettis" },
+];
+
 
 const IllustrationGallery = () => {
   const [paletteIndex, setPaletteIndex] = useState(0);
